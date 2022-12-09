@@ -217,7 +217,7 @@ lawo:A5 rdf:type owl:NamedIndividual ,
                  lawo:Cell ;
         sequence:directlyFollows lawo:B7 ;
         lawo:hasChapter lawo:Chapter_99 ;
-        lawo:hasPlace lawo:Place_01 .
+        lawo:hasPlace lawo:Place_32 .
 
 
 ###  https://lifeawo.github.io/lifeawo.owl#A6
@@ -5491,7 +5491,8 @@ lawo:F4 rdf:type owl:NamedIndividual ,
 lawo:F5 rdf:type owl:NamedIndividual ,
                  lawo:Cell ;
         sequence:directlyPrecedes lawo:H4 ;
-        lawo:hasChapter lawo:Chapter_01 .
+        lawo:hasChapter lawo:Chapter_01 ;
+        lawo:hasPlace lawo:Place_01 .
 
 
 ###  https://lifeawo.github.io/lifeawo.owl#F6
