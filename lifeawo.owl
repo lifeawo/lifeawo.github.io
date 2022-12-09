@@ -162,7 +162,8 @@ lawo:Place rdf:type owl:Class ;
                              owl:onProperty lawo:hasMainCharacter ;
                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                              owl:onClass lawo:Character
-                           ] .
+                           ] ;
+           rdfs:comment "Places (like apartments, common spaces, caves, streets, rooms, etc.)" .
 
 
 ###  https://lifeawo.github.io/lifeawo.owl#Topic
