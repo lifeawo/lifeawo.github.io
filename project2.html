@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="project2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&&family=Sono:wght@200;400;500;700;800&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet for SPARQL Query lighboxes -->
+    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
+
+</head>
+<body>
+    <section>
+
+        <article> <!--1-->
+            <a href="./index.html">
+            <img id="logo" src="./img/logolawo.png"/>
+        </a>
+        </article>
+
+        <article> <!--2-->
+
+        </article>
+
+        <article> <!--3-->
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--5-->
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--9-->
+            <div class="nav">
+            <a href="./book.html">
+                <h2 >The <br/>Book</h2>
+            </a>
+             </div>
+        </article>
+
+        <article> <!--10-->
+            <div class="nav">
+            <a href="./project.html">
+                <h2>The <br/>Project</h2>
+                </a>
+            </div>
+
+
+        </article>
+
+        <article><!--11-->
+            <div class="nav">
+            <a href="myDocumentation/index-en.html" target="_blank">
+                <h2>Ontology</h2>
+            </a>
+            </div>
+
+        </article>
+
+        <article><!--12-->
+            <div class="nav">
+                <a href="./sparse.html">
+                    <h2>Sparse Parts</h2>
+                </a>
+                </div>
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--15-->
+
+
+        </article>
+
+        <article><!--16-->
+          <a href="./project.html"><img id="arrow2" src="./img/arrow.png"/></a>
+
+            
+
+        </article>
+
+        <article> <!--17-->
+            <div class="text">
+                <h4>First Step:</h4>
+                <h5>Knight’s Move</h5>
+
+            </div>
+
+        </article>
+
+        <article> <!--18-->
+          <a href="./project3.html"><img id="arrow" src="./img/arrow.png"/></a>
+
+        </article>
+
+        <article> <!--19-->
+
+        </article>
+
+        <article> <!--20-->
+
+        </article>
+
+        <article>
+
+            <div class="text">
+                <p>The novel unfolds on a 10x10 grid, where each square (cell) is a place and a chapter. Each chapter tells the story of a main character.  <b>The sequence of the cells is predefined and based on the chess knight piece move</b>, with the requirement that it cannot step two times on the same cell. Cell A1 is skipped. </p>
+                </div>
+
+
+        </article>
+
+        <article>
+
+
+
+        </article>
+
+        <article><!--23-->
+            <div class="text">
+                <h4>Competency Questions</h4>
+            </div>
+
+        </article>
+
+        <article> <!--24-->
+            <div class="text">
+                <ol>
+                    <li>What is the starting cell? (F5)  (=What cell has no prev cell?)</li>
+                    <li>What place is described in chapter 1? (Dans l'escalier) (=What place is described in a specific chapter?)</li>
+                    <li>What is the ending cell? (A5) (=What cell has no next cell?)</li>
+                    <li>What place does the last chapter describe? (Bartlebooth's)</li>
+                    <li>What cells have no corresponding chapter? (A1)</li>
+                    <li>What cell and chapter follow the position J7? (I9, chapter 6) (= What is the next cell of a given cell?)</li>
+                    <li>What place is cell H8? (Winckler) (=What place corresponds to a specific cell?)</li>
+                    <li>What apartment follows chapter 25? (Bartlebooth's)</li>
+                </ol>
+            </div>
+        </article>
+
+        <article> <!--25-->
+
+
+        </article>
+
+        <article> <!--26-->
+
+
+        </article>
+
+        <article><!--27-->
+
+
+        </article>
+
+        <article><!--28-->
+            <div class="text">
+            <p><strong>Classes:</strong></p>
+                <ul>
+                <li>Cells</li>
+                <li>Chapters</li>
+                <li>Topics
+                    <ul>
+                   <li>Characters</li>
+                   <li>Places</li>
+                   </ul>
+                              </li>
+                          </ul>
+             <p><strong>Data Properties:</strong></p>
+                <ul>
+                    <li>ChapterNumber (?chapter, 0 < x <=100)</li>
+                </ul>
+             <p><strong>Object Properties:</strong></p>
+                 <ul>
+                <li>hasCell (?chapter, ?cell)</li>
+                <li>hasChapter (?cell, ?chapter)</li>
+                <li>hasMainCharacter (?place, ?character)</li>
+                <li>hasPlace (?cell, ?place)</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <article><!--29-->
+            <div class="text">
+                <h4>Elements</h4>
+            </div>
+
+
+        </article>
+
+        <article> <!--30-->
+
+
+
+        </article>
+
+        <article> <!--31-->
+
+        </article>
+
+
+        <article> <!--32-->
+
+
+        </article>
+
+        <article><!--33-->
+            <div class="text">
+                <h4>Generic Use Cases</h4>
+            </div>
+
+
+
+        </article>
+
+        <article>
+            <div class="text">
+                <p class="margin">
+                    For this step we identified the ODP <strong>“Sequence”</strong> from ontologydesignpatterns.org:<br/>
+                    <a href="http://ontologydesignpatterns.org/wiki/Submissions:Sequence" target="_blank">http://ontologydesignpatterns.org/wiki/Submissions:Sequence</a>
+                  </p>
+                  <p>
+                    Even if we have a connection between cells and chapters we can use to determine the sequence of cells (given that the sequence of chapters is incremental), we integrated this ontology for faster data extraction.
+                  </p>
+                  <p>We asserted only the property <strong>directlyFollows</strong> to define the sequence of the cells, leaving the reasoner to infer all the other properties (follows, precedes, directlyPrecedes).</p>
+            </div>
+
+
+
+        </article>
+
+        <article> <!--35-->
+
+
+
+        </article>
+
+        <article>
+
+
+        </article>
+
+        <article> <!--37-->
+
+
+        </article>
+
+        <article>
+            <div class="text">
+                <ol>
+                    <li>What is the starting cell? (F5)  (=What cell matches chapter 1?) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-01">SPARQL Query</a></li>
+                    <li>What place is described in chapter 1? (Dans l'escalier) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-02">SPARQL Query</a></li>
+                    <li>What is the ending cell? (A5) (=What cell has no next cell?) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-03">SPARQL Query</a></li>
+                    <li>What place does the last chapter describe? (Bartlebooth's) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-04">SPARQL Query</a></li>
+                    <li>What cells have no corresponding chapter? (A1) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-05">SPARQL Query</a></li>
+                    <li>What cell and chapter follow the position J7? I9, chapter 6 (= What is the next cell of a given cell?) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-06">SPARQL Query</a></li>
+                    <li>What place is cell H8? (Winckler) (=What place corresponds to a specific cell?) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-07">SPARQL Query</a></li>
+                    <li>What chapters are set in the caves? 33, 67, 72, 76, 91 (=What chapters are set in a specific place?) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="650px" href="#sparql-08">SPARQL Query</a></li>
+                </ol>
+
+            </div>
+
+        </article>
+
+        <article>
+            <div class="text">
+                <h4>Unit Tests</h4>
+            </div>
+
+
+        </article>
+
+        <article> <!--40-->
+
+
+        </article>
+
+        <article> <!--41-->
+
+
+        </article>
+
+        <article>  <!--42-->
+
+
+        </article>
+
+        <article> <!--43-->
+
+
+        </article>
+
+        <article> <!--44-->
+
+        </article>
+
+        <article> <!--45-->
+            <div class="text">
+                <h4>First Step Notes</h4>
+            </div>
+
+        </article>
+
+        <article><!--46-->
+            <div class="text">
+                <p class="margin">The consistency of the model has been checked with the <strong>Pellet</strong> reasoner, while SPARQL queries with <strong>SPARQL Query</strong> tab in Protege. </p>
+                <p class="margin">In order to keep the graph light and Protege working, we put in the ABox only the data needed to answer the Competency Questions for the final tests.</p>
+                <p>That is, while we entered all the Cells and the Chapters, only a few Places and Characters were put in the graph.</p>
+            </div>
+
+
+        </article>
+
+        <article> <!--47-->
+
+
+        </article>
+
+        <article> <!--48-->
+
+
+        </article>
+
+        <article> <!--49-->
+            <a href="./project3.html"><img id="door" src="./img/door.png"/></a>
+
+
+        </article>
+        <article> <!--50-->
+
+
+        </article>
+        <article> <!--51-->
+            <a href="https://github.com/lifeawo/lifeawo.github.io" target="_blank"><img id="github" src="./img/github.png"/></a>
+
+        </article>
+        <article> <!--52-->
+            <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454463" target="_blank"><img id="unibo" src="./img/unibo.png"/></a>
+
+        </article>
+        <article> <!--53-->
+
+            <div class="text">
+                <p>2022, Diego Chillo & Laura Travaglini</p>
+            </div>
+        </article>
+        <article> <!--54-->
+
+        </article>
+        <article> <!--55-->
+
+        </article>
+        <article> <!--56-->
+
+        </article>
+        <article> <!--57-->
+
+        </article>
+
+        <article> <!--58-->
+
+        </article>
+        <article> <!--59-->
+
+        </article>
+
+        <article> <!--60-->
+
+        </article>
+        <article> <!--61-->
+
+        </article>
+        <article> <!--62-->
+
+        </article>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- MODAL BOXEX FOR SPARQL QUERIES -->
+    <div id="sparql-01" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the starting cell?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/>
+          SELECT ?cell<br/>
+            &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasChapter ?chap .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:ChapterNumber 1 .<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong> cell = F5<br/>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="sparql-02" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What place is described in chapter 1?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/>
+          SELECT ?place_label<br/>
+           &nbsp;&nbsp;WHERE {<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;lawo:Chapter_01 lawo:hasCell ?cell .<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasPlace ?place .<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;?place rdfs:label ?place_label .<br/>
+                &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong> place_label = "Dans l'escalier"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-03" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the ending cell?</h3>
+
+        <p>If you know that chapters are 99:<br/><br/></p>
+        <div class="codebox">
+        <code>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/>
+          SELECT ?cell<br/>
+            &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasChapter ?chap .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:ChapterNumber 99 .<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong> cell = A5<br/>
+        </div>
+
+        <p>If you don't know how many chapters there are:<br/><br/></p>
+        <div class="codebox">
+          <code>
+            PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+            <br/>
+            SELECT ?cell ?cnpu ?nextchap<br/>
+              &nbsp;&nbsp;WHERE {<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasChapter ?chap .<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:ChapterNumber ?chapnum .<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;BIND (?chapnum+1 as ?cnpu)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL {?nextchap lawo:ChapterNumber ?cnpu . }<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;FILTER (!bound(?nextchap))<br/>
+              &nbsp;&nbsp;}
+          </code>
+        </div>
+        <div class="query-result">
+          <strong>Result:</strong> cell = A5<br/>
+          cnpu = “100”^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          nextchap = “”<br/><br/>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="sparql-04" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What place does the last chapter describe?</h3>
+        <p>Assuming we don't know the total number of chapters:<br/><br/></p>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/>
+          SELECT ?cell ?chap ?place_label<br/>
+            &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasChapter ?chap ;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:hasPlace ?place .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:ChapterNumber ?chapnum .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?place rdfs:label ?place_label .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;BIND (?chapnum+1 as ?cnpu)<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL {?nextchap lawo:ChapterNumber ?cnpu . }<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;FILTER (!bound(?nextchap))<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+           cell = A5<br/>
+           chap = Chapter_99<br/>
+           place_label = "Bartlebooth"<br/>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="sparql-05" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What cells have no corresponding chapters?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/>
+          SELECT ?cell<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cell a lawo:Cell .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL { ?cell lawo:hasChapter ?chap }<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;FILTER( !bound( ?chap ) )<br/>
+          &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+           cell = A1<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-06" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What cell and chapter follow the position J7?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX sequence: &lt;http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#&gt;<br/>
+          <br/><br/>
+          SELECT ?cell ?chapter<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cell sequence:directlyFollows lawo:J7 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasChapter ?chapter .<br/>
+          &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+           cell = I9<br/>
+           chapter = Chapter_06<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-07" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What place is cell H8?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/><br/>
+          SELECT ?place_label<br/>
+            &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;lawo:H8 lawo:hasPlace ?place .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?place rdfs:label ?place_label .<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+           place_label = "Winckler"
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-08" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What chapters are set in the caves?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          <br/>
+          SELECT ?chapnum<br/>
+            &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cell lawo:hasPlace lawo:Place_17 ;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:hasChapter ?chap .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:ChapterNumber ?chapnum .<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          chapnum =<br/>
+          "72"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "67"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "33"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "91"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "76"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+        </div>
+      </div>
+    </div>
+
+
+    // Venobox for SPARQL Query windows
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <script type="text/javascript">
+        new VenoBox({
+          selector: ".sparql-link"
+        });
+    </script>
+
+
+
+</body>
+</html>

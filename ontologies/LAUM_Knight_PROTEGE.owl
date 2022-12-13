@@ -1,0 +1,1362 @@
+@prefix : <http://www.semanticweb.org/LAUM/knightmove#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/LAUM/knightmove> .
+
+<http://www.semanticweb.org/LAUM/knightmove> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/LAUM/knightmove#hasCell
+:hasCell rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         owl:inverseOf :hasChapter ;
+         rdfs:domain :Chapter ;
+         rdfs:range :Cell .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#hasChapter
+:hasChapter rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Cell ;
+            rdfs:range :Chapter .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:ObjectProperty ;
+                      owl:inverseOf owl:topObjectProperty ;
+                      rdf:type owl:SymmetricProperty ,
+                               owl:TransitiveProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/LAUM/knightmove#ChapterNumber
+:ChapterNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Chapter ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:onDatatype xsd:int ;
+                            owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                                   ]
+                                                   [ xsd:maxInclusive "100"^^xsd:int
+                                                   ]
+                                                 )
+                          ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/LAUM/knightmove#Cell
+:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter
+:Chapter rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/LAUM/knightmove#A1
+:A1 rdf:type owl:NamedIndividual ,
+             :Cell .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A10
+:A10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_59 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A2
+:A2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_63 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A3
+:A3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_71 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A4
+:A4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_25 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A5
+:A5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_99 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A6
+:A6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_61 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A7
+:A7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_12 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A8
+:A8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_84 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#A9
+:A9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_97 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B1
+:B1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_72 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B10
+:B10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_83 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B2
+:B2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_24 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B3
+:B3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_65 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B4
+:B4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_62 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B5
+:B5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_70 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B6
+:B6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_85 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B7
+:B7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_98 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B8
+:B8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_60 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#B9
+:B9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_11 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C1
+:C1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_64 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C10
+:C10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_15 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C2
+:C2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_66 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C3
+:C3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_20 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C4
+:C4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_88 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C5
+:C5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_26 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C6
+:C6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_13 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C7
+:C7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_81 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C8
+:C8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_96 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#C9
+:C9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_58 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_01
+:Chapter_01 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F5 ;
+            :ChapterNumber 1 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_02
+:Chapter_02 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H4 ;
+            :ChapterNumber 2 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_03
+:Chapter_03 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J5 ;
+            :ChapterNumber 3 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_04
+:Chapter_04 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H6 ;
+            :ChapterNumber 4 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_05
+:Chapter_05 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J7 ;
+            :ChapterNumber 5 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_06
+:Chapter_06 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I9 ;
+            :ChapterNumber 6 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_07
+:Chapter_07 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G10 ;
+            :ChapterNumber 7 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_08
+:Chapter_08 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H8 ;
+            :ChapterNumber 8 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_09
+:Chapter_09 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F9 ;
+            :ChapterNumber 9 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_10
+:Chapter_10 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D10 ;
+            :ChapterNumber 10 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_11
+:Chapter_11 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B9 ;
+            :ChapterNumber 11 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_12
+:Chapter_12 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A7 ;
+            :ChapterNumber 12 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_13
+:Chapter_13 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C6 ;
+            :ChapterNumber 13 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_14
+:Chapter_14 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D8 ;
+            :ChapterNumber 14 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_15
+:Chapter_15 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C10 ;
+            :ChapterNumber 15 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_16
+:Chapter_16 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E9 ;
+            :ChapterNumber 16 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_17
+:Chapter_17 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F7 ;
+            :ChapterNumber 17 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_18
+:Chapter_18 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D6 ;
+            :ChapterNumber 18 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_19
+:Chapter_19 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E4 ;
+            :ChapterNumber 19 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_20
+:Chapter_20 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C3 ;
+            :ChapterNumber 20 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_21
+:Chapter_21 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D1 ;
+            :ChapterNumber 21 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_22
+:Chapter_22 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F2 ;
+            :ChapterNumber 22 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_23
+:Chapter_23 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D3 ;
+            :ChapterNumber 23 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_24
+:Chapter_24 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B2 ;
+            :ChapterNumber 24 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_25
+:Chapter_25 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A4 ;
+            :ChapterNumber 25 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_26
+:Chapter_26 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C5 ;
+            :ChapterNumber 26 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_27
+:Chapter_27 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E6 ;
+            :ChapterNumber 27 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_28
+:Chapter_28 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G7 ;
+            :ChapterNumber 28 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_29
+:Chapter_29 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H5 ;
+            :ChapterNumber 29 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_30
+:Chapter_30 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J6 ;
+            :ChapterNumber 30 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_31
+:Chapter_31 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I4 ;
+            :ChapterNumber 31 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_32
+:Chapter_32 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J2 ;
+            :ChapterNumber 32 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_33
+:Chapter_33 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H1 ;
+            :ChapterNumber 33 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_34
+:Chapter_34 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G3 ;
+            :ChapterNumber 34 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_35
+:Chapter_35 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E2 ;
+            :ChapterNumber 35 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_36
+:Chapter_36 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F4 ;
+            :ChapterNumber 36 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_37
+:Chapter_37 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H3 ;
+            :ChapterNumber 37 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_38
+:Chapter_38 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G1 ;
+            :ChapterNumber 38 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_39
+:Chapter_39 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I2 ;
+            :ChapterNumber 39 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_40
+:Chapter_40 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J4 ;
+            :ChapterNumber 40 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_41
+:Chapter_41 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I6 ;
+            :ChapterNumber 41 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_42
+:Chapter_42 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G5 ;
+            :ChapterNumber 42 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_43
+:Chapter_43 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H7 ;
+            :ChapterNumber 43 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_44
+:Chapter_44 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J8 ;
+            :ChapterNumber 44 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_45
+:Chapter_45 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I10 ;
+            :ChapterNumber 45 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_46
+:Chapter_46 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G9 ;
+            :ChapterNumber 46 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_47
+:Chapter_47 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E8 ;
+            :ChapterNumber 47 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_48
+:Chapter_48 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F10 ;
+            :ChapterNumber 48 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_49
+:Chapter_49 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G8 ;
+            :ChapterNumber 49 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_50
+:Chapter_50 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I7 ;
+            :ChapterNumber 50 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_51
+:Chapter_51 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J9 ;
+            :ChapterNumber 51 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_52
+:Chapter_52 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H10 ;
+            :ChapterNumber 52 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_53
+:Chapter_53 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I8 ;
+            :ChapterNumber 53 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_54
+:Chapter_54 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J10 ;
+            :ChapterNumber 54 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_55
+:Chapter_55 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H9 ;
+            :ChapterNumber 55 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_56
+:Chapter_56 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F8 ;
+            :ChapterNumber 56 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_57
+:Chapter_57 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E10 ;
+            :ChapterNumber 57 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_58
+:Chapter_58 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C9 ;
+            :ChapterNumber 58 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_59
+:Chapter_59 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A10 ;
+            :ChapterNumber 59 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_60
+:Chapter_60 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B8 ;
+            :ChapterNumber 60 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_61
+:Chapter_61 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A6 ;
+            :ChapterNumber 61 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_62
+:Chapter_62 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B4 ;
+            :ChapterNumber 62 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_63
+:Chapter_63 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A2 ;
+            :ChapterNumber 63 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_64
+:Chapter_64 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C1 ;
+            :ChapterNumber 64 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_65
+:Chapter_65 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B3 ;
+            :ChapterNumber 65 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_66
+:Chapter_66 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C2 ;
+            :ChapterNumber 66 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_67
+:Chapter_67 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E1 ;
+            :ChapterNumber 67 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_68
+:Chapter_68 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F3 ;
+            :ChapterNumber 68 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_69
+:Chapter_69 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D4 ;
+            :ChapterNumber 69 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_70
+:Chapter_70 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B5 ;
+            :ChapterNumber 70 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_71
+:Chapter_71 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A3 ;
+            :ChapterNumber 71 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_72
+:Chapter_72 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B1 ;
+            :ChapterNumber 72 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_73
+:Chapter_73 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D2 ;
+            :ChapterNumber 73 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_74
+:Chapter_74 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F1 ;
+            :ChapterNumber 74 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_75
+:Chapter_75 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :H2 ;
+            :ChapterNumber 75 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_76
+:Chapter_76 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J1 ;
+            :ChapterNumber 76 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_77
+:Chapter_77 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I3 ;
+            :ChapterNumber 77 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_78
+:Chapter_78 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G4 ;
+            :ChapterNumber 78 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_79
+:Chapter_79 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :F6 ;
+            :ChapterNumber 79 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_80
+:Chapter_80 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D5 ;
+            :ChapterNumber 80 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_81
+:Chapter_81 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C7 ;
+            :ChapterNumber 81 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_82
+:Chapter_82 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D9 ;
+            :ChapterNumber 82 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_83
+:Chapter_83 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B10 ;
+            :ChapterNumber 83 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_84
+:Chapter_84 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A8 ;
+            :ChapterNumber 84 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_85
+:Chapter_85 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B6 ;
+            :ChapterNumber 85 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_86
+:Chapter_86 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :D7 ;
+            :ChapterNumber 86 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_87
+:Chapter_87 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E5 ;
+            :ChapterNumber 87 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_88
+:Chapter_88 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C4 ;
+            :ChapterNumber 88 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_89
+:Chapter_89 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E3 ;
+            :ChapterNumber 89 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_90
+:Chapter_90 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G2 ;
+            :ChapterNumber 90 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_91
+:Chapter_91 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I1 ;
+            :ChapterNumber 91 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_92
+:Chapter_92 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :J3 ;
+            :ChapterNumber 92 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_93
+:Chapter_93 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :I5 ;
+            :ChapterNumber 93 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_94
+:Chapter_94 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :G6 ;
+            :ChapterNumber 94 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_95
+:Chapter_95 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :E7 ;
+            :ChapterNumber 95 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_96
+:Chapter_96 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :C8 ;
+            :ChapterNumber 96 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_97
+:Chapter_97 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A9 ;
+            :ChapterNumber 97 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_98
+:Chapter_98 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :B7 ;
+            :ChapterNumber 98 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#Chapter_99
+:Chapter_99 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasCell :A5 ;
+            :ChapterNumber 99 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D1
+:D1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_21 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D10
+:D10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_10 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D2
+:D2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_73 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D3
+:D3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_23 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D4
+:D4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_69 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D5
+:D5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_80 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D6
+:D6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_18 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D7
+:D7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_86 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D8
+:D8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_14 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#D9
+:D9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_82 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E1
+:E1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_67 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E10
+:E10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_57 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E2
+:E2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_35 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E3
+:E3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_89 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E4
+:E4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_19 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E5
+:E5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_87 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E6
+:E6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_27 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E7
+:E7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_95 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E8
+:E8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_47 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#E9
+:E9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_16 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F1
+:F1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_74 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F10
+:F10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_48 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F2
+:F2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_22 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F3
+:F3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_68 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F4
+:F4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_36 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F5
+:F5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_01 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F6
+:F6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_79 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F7
+:F7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_17 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F8
+:F8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_56 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#F9
+:F9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_09 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G1
+:G1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_38 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G10
+:G10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_07 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G2
+:G2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_90 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G3
+:G3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_34 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G4
+:G4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_78 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G5
+:G5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_42 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G6
+:G6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_94 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G7
+:G7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_28 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G8
+:G8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_49 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#G9
+:G9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_46 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H1
+:H1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_33 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H10
+:H10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_52 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H2
+:H2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_75 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H3
+:H3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_37 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H4
+:H4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_02 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H5
+:H5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_29 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H6
+:H6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_04 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H7
+:H7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_43 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H8
+:H8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_08 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#H9
+:H9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_55 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I1
+:I1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_91 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I10
+:I10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_45 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I2
+:I2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_39 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I3
+:I3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_77 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I4
+:I4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_31 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I5
+:I5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_93 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I6
+:I6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_41 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I7
+:I7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_50 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I8
+:I8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_53 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#I9
+:I9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_06 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J1
+:J1 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_76 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J10
+:J10 rdf:type owl:NamedIndividual ,
+              :Cell ;
+     :hasChapter :Chapter_54 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J2
+:J2 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_32 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J3
+:J3 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_92 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J4
+:J4 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_40 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J5
+:J5 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_03 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J6
+:J6 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_30 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J7
+:J7 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_05 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J8
+:J8 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_44 .
+
+
+###  http://www.semanticweb.org/LAUM/knightmove#J9
+:J9 rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :hasChapter :Chapter_51 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

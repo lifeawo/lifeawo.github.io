@@ -1,0 +1,3225 @@
+@prefix : <http://www.semanticweb.org/laum/constraints#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/laum/constraints> .
+
+<http://www.semanticweb.org/laum/constraints> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/laum/constraints#hasChapter
+:hasChapter rdf:type owl:ObjectProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :constraint_combo ;
+            rdfs:range :chapter .
+
+
+###  http://www.semanticweb.org/laum/constraints#hasConstraint
+:hasConstraint rdf:type owl:ObjectProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :constraint_combo ;
+               rdfs:range :constraint .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/laum/constraints#hasName
+:hasName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/laum/constraints#hasText
+:hasText rdf:type owl:DatatypeProperty ;
+         rdfs:domain :constraint_combo ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :constraint_combo ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/laum/constraints#chapter
+:chapter rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laum/constraints#constraint
+:constraint rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laum/constraints#constraint_combo
+:constraint_combo rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/laum/constraints#VIII_1
+:VIII_1 rdf:type owl:NamedIndividual ,
+                 :constraint_combo ;
+        :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+        :hasConstraint :chapitre ;
+        :hasText "Winckler,1" ;
+        :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#VIII_2
+:VIII_2 rdf:type owl:NamedIndividual ,
+                 :constraint_combo ;
+        :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+        :hasConstraint <http://www.semanticweb.org/laum/constraints#1A_position> ;
+        :hasText "" ;
+        :hasValue "assis" .
+
+
+###  http://www.semanticweb.org/laum/constraints#action
+:action rdf:type owl:NamedIndividual ,
+                 :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#chap.99
+:chap.99 rdf:type owl:NamedIndividual ,
+                  :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#chapitre
+:chapitre rdf:type owl:NamedIndividual ,
+                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#chronologie
+:chronologie rdf:type owl:NamedIndividual ,
+                      :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#compendium
+:compendium rdf:type owl:NamedIndividual ,
+                     :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#coordonnees
+:coordonnees rdf:type owl:NamedIndividual ,
+                      :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#histoires
+:histoires rdf:type owl:NamedIndividual ,
+                    :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#lieux
+:lieux rdf:type owl:NamedIndividual ,
+                :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#personnes
+:personnes rdf:type owl:NamedIndividual ,
+                    :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#0A_vegetal
+<http://www.semanticweb.org/laum/constraints#0A_vegetal> rdf:type owl:NamedIndividual ,
+                                                                  :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#0B_manque
+<http://www.semanticweb.org/laum/constraints#0B_manque> rdf:type owl:NamedIndividual ,
+                                                                 :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#0a_bibelots
+<http://www.semanticweb.org/laum/constraints#0a_bibelots> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#0b_faux
+<http://www.semanticweb.org/laum/constraints#0b_faux> rdf:type owl:NamedIndividual ,
+                                                               :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#1A_position
+<http://www.semanticweb.org/laum/constraints#1A_position> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#1B_citation_1
+<http://www.semanticweb.org/laum/constraints#1B_citation_1> rdf:type owl:NamedIndividual ,
+                                                                     :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#1C_couple_1
+<http://www.semanticweb.org/laum/constraints#1C_couple_1> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#1a_activite
+<http://www.semanticweb.org/laum/constraints#1a_activite> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#1b_citation_2
+<http://www.semanticweb.org/laum/constraints#1b_citation_2> rdf:type owl:NamedIndividual ,
+                                                                     :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#1c_couple_2
+<http://www.semanticweb.org/laum/constraints#1c_couple_2> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#15
+<http://www.semanticweb.org/laum/constraints#15> rdf:type owl:NamedIndividual ,
+                                                          :chapter .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_1
+<http://www.semanticweb.org/laum/constraints#15_1> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint :chapitre ;
+                                                   :hasText """chambre de bonne,5
+Smautf""" ;
+                                                   :hasValue "15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_10
+<http://www.semanticweb.org/laum/constraints#15_10> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#3A_murs> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "toile de Jouy"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_11
+<http://www.semanticweb.org/laum/constraints#15_11> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#3a_sols> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "parquet a point de Hongrie"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_12
+<http://www.semanticweb.org/laum/constraints#15_12> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#3B_epoque> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "19eme"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_13
+<http://www.semanticweb.org/laum/constraints#15_13> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#3b_lieu> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "Afrique du Nord"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_14
+<http://www.semanticweb.org/laum/constraints#15_14> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#4A_style> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "Regency bateau â€¦"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_15
+<http://www.semanticweb.org/laum/constraints#15_15> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#4a_meubles> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "bahut, armoire, maie â€¦"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_16
+<http://www.semanticweb.org/laum/constraints#15_16> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#4B_longueur> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "4 pages"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_17
+<http://www.semanticweb.org/laum/constraints#15_17> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#4b_divers> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "litterature danoise"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_18
+<http://www.semanticweb.org/laum/constraints#15_18> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#5A_age_et_sexe> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "jeune enfant av. 10 ans"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_19
+<http://www.semanticweb.org/laum/constraints#15_19> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#5a_animaux> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "chat"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_2
+<http://www.semanticweb.org/laum/constraints#15_2> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#1A_position> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "monter, + haut que sol"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_20
+<http://www.semanticweb.org/laum/constraints#15_20> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#5B_vetement> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "manteau"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_21
+<http://www.semanticweb.org/laum/constraints#15_21> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "a pois"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_22
+<http://www.semanticweb.org/laum/constraints#15_22> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "laine"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_23
+<http://www.semanticweb.org/laum/constraints#15_23> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#6a_couleurs> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "orange"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_24
+<http://www.semanticweb.org/laum/constraints#15_24> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#6B_accessoires> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "caleÃ§ons, sous-vetements"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_25
+<http://www.semanticweb.org/laum/constraints#15_25> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#6b_bijoux> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "lunettes"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_26
+<http://www.semanticweb.org/laum/constraints#15_26> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#7A_lectures> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "policier, SF"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_27
+<http://www.semanticweb.org/laum/constraints#15_27> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#7a_musiques> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "contemporain"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_28
+<http://www.semanticweb.org/laum/constraints#15_28> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#7B_tableaux> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "Nature morte a l'echiquier(Lubin Baugin)"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_29
+<http://www.semanticweb.org/laum/constraints#15_29> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#7b_livre> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "La Disparition(Georges Perec)"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_3
+<http://www.semanticweb.org/laum/constraints#15_3> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#1a_activite> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "tenir un morceau de bois"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_30
+<http://www.semanticweb.org/laum/constraints#15_30> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#8A_boissons> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "biere, cidre"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_31
+<http://www.semanticweb.org/laum/constraints#15_31> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#8a_nourriture> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "zakouskis"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_32
+<http://www.semanticweb.org/laum/constraints#15_32> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#8B_petit_meuble> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "sculptures mobiles"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_33
+<http://www.semanticweb.org/laum/constraints#15_33> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#8b_jeux> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "mots croises"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_34
+<http://www.semanticweb.org/laum/constraints#15_34> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#9A_sentiments> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "douleur"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_35
+<http://www.semanticweb.org/laum/constraints#15_35> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#9a_peintures> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "gravure"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_36
+<http://www.semanticweb.org/laum/constraints#15_36> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#9B_surface> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "triangle"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_37
+<http://www.semanticweb.org/laum/constraints#15_37> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#9b_volume> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "sphere"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_38
+<http://www.semanticweb.org/laum/constraints#15_38> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#0A_vegetal> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "plantes grasses"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_39
+<http://www.semanticweb.org/laum/constraints#15_39> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#0a_bibelots> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "cristal, verre taille"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_4
+<http://www.semanticweb.org/laum/constraints#15_4> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#1B_citation_1> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "Borges"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_40
+<http://www.semanticweb.org/laum/constraints#15_40> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#0B_manque> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_41
+<http://www.semanticweb.org/laum/constraints#15_41> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#0b_faux> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_42
+<http://www.semanticweb.org/laum/constraints#15_42> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#1C_couple_1> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "Crime"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_43
+<http://www.semanticweb.org/laum/constraints#15_43> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint <http://www.semanticweb.org/laum/constraints#1c_couple_2> ;
+                                                    :hasText "_" ;
+                                                    :hasValue "Bete"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_44
+<http://www.semanticweb.org/laum/constraints#15_44> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :coordonnees ;
+                                                    :hasText "Smautf en est aujourd'hui a 76!" ;
+                                                    :hasValue "13"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_45
+<http://www.semanticweb.org/laum/constraints#15_45> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :compendium ;
+                                                    :hasText "Le petit chat sourd aux yeux vairons vivant au dernier etage" ;
+                                                    :hasValue "3"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_46
+<http://www.semanticweb.org/laum/constraints#15_46> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :compendium ;
+                                                    :hasText "Le barman malais echangeant en pidgin-english sa deesse-mere" ;
+                                                    :hasValue "49"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_47
+<http://www.semanticweb.org/laum/constraints#15_47> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :compendium ;
+                                                    :hasText "Le vieux maitre d'hotel recalculant sans fin une factorielle" ;
+                                                    :hasValue "111"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_48
+<http://www.semanticweb.org/laum/constraints#15_48> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :histoires ;
+                                                    :hasText """du vieux domestique qui accompagna son maitre autour du monde
+{Smautf Mortimer et Bartlebooth}""" ;
+                                                    :hasValue "107"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_49
+<http://www.semanticweb.org/laum/constraints#15_49> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth peint sa premiere aquarelle a Gijon." ;
+                                                    :hasValue "janvier 1935"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_5
+<http://www.semanticweb.org/laum/constraints#15_5> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#1b_citation_2> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "Butor"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_50
+<http://www.semanticweb.org/laum/constraints#15_50> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Europe;" ;
+                                                    :hasValue "1936"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_51
+<http://www.semanticweb.org/laum/constraints#15_51> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Europe;" ;
+                                                    :hasValue "1937"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_52
+<http://www.semanticweb.org/laum/constraints#15_52> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Afrique;" ;
+                                                    :hasValue "1938"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_53
+<http://www.semanticweb.org/laum/constraints#15_53> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Afrique." ;
+                                                    :hasValue "1939"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_54
+<http://www.semanticweb.org/laum/constraints#15_54> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Smautf achete un crucifix tricephale dans les souks d'Agadir." ;
+                                                    :hasValue "janvier 1939"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_55
+<http://www.semanticweb.org/laum/constraints#15_55> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Afrique." ;
+                                                    :hasValue "1940"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_56
+<http://www.semanticweb.org/laum/constraints#15_56> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Afrique." ;
+                                                    :hasValue "1941"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_57
+<http://www.semanticweb.org/laum/constraints#15_57> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Afrique." ;
+                                                    :hasValue "1942"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_58
+<http://www.semanticweb.org/laum/constraints#15_58> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Amerique du Sud." ;
+                                                    :hasValue "1943"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_59
+<http://www.semanticweb.org/laum/constraints#15_59> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Amerique du Sud." ;
+                                                    :hasValue "1944"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_6
+<http://www.semanticweb.org/laum/constraints#15_6> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#2A_nombre_personnes> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "1"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_60
+<http://www.semanticweb.org/laum/constraints#15_60> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Amerique centrale." ;
+                                                    :hasValue "1945"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_61
+<http://www.semanticweb.org/laum/constraints#15_61> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Amerique du Nord." ;
+                                                    :hasValue "1946"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_62
+<http://www.semanticweb.org/laum/constraints#15_62> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Amerique du Nord." ;
+                                                    :hasValue "1947"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_63
+<http://www.semanticweb.org/laum/constraints#15_63> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Amerique du Nord." ;
+                                                    :hasValue "1948"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_64
+<http://www.semanticweb.org/laum/constraints#15_64> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Asie." ;
+                                                    :hasValue "1949"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_65
+<http://www.semanticweb.org/laum/constraints#15_65> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Asie." ;
+                                                    :hasValue "1950"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_66
+<http://www.semanticweb.org/laum/constraints#15_66> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Asie;" ;
+                                                    :hasValue "1951"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_67
+<http://www.semanticweb.org/laum/constraints#15_67> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth en Oceanie;" ;
+                                                    :hasValue "1952"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_68
+<http://www.semanticweb.org/laum/constraints#15_68> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth sur l'Ocean Indien;" ;
+                                                    :hasValue "1953"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_69
+<http://www.semanticweb.org/laum/constraints#15_69> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "aux Seychelles, Smautf echange son crucifix contre une statue de la deesse-mere tricephale." ;
+                                                    :hasValue "1953"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_7
+<http://www.semanticweb.org/laum/constraints#15_7> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#2a_role> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "fournisseur"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_70
+<http://www.semanticweb.org/laum/constraints#15_70> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chronologie ;
+                                                    :hasText "Bartlebooth peint sa derniere marine a Brouwershaven" ;
+                                                    :hasValue "21 decembre 1954"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_71
+<http://www.semanticweb.org/laum/constraints#15_71> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :chap.99 ;
+                                                    :hasText "86,)un chat aux yeux vairons dort chez Smautf" ;
+                                                    :hasValue "15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_72
+<http://www.semanticweb.org/laum/constraints#15_72> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :lieux ;
+                                                    :hasText "Sous les toits, ... , la chambre de Mortimer Smautf, le vieux maitre d'Hotel de Bartlebooth." ;
+                                                    :hasValue "15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_73
+<http://www.semanticweb.org/laum/constraints#15_73> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :personnes ;
+                                                    :hasText "La piece est vide." ;
+                                                    :hasValue "15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_74
+<http://www.semanticweb.org/laum/constraints#15_74> rdf:type owl:NamedIndividual ,
+                                                             :constraint_combo ;
+                                                    :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                    :hasConstraint :action ;
+                                                    :hasText "_" ;
+                                                    :hasValue "15"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_8
+<http://www.semanticweb.org/laum/constraints#15_8> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#2B_3e_secteur> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "fait divers"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#15_9
+<http://www.semanticweb.org/laum/constraints#15_9> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#15> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#2b_ressort_> ;
+                                                   :hasText "_" ;
+                                                   :hasValue "revenir de voyage"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#2A_nombre_personnes
+<http://www.semanticweb.org/laum/constraints#2A_nombre_personnes> rdf:type owl:NamedIndividual ,
+                                                                           :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#2B_3e_secteur
+<http://www.semanticweb.org/laum/constraints#2B_3e_secteur> rdf:type owl:NamedIndividual ,
+                                                                     :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#2a_role
+<http://www.semanticweb.org/laum/constraints#2a_role> rdf:type owl:NamedIndividual ,
+                                                               :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#2b_ressort_
+<http://www.semanticweb.org/laum/constraints#2b_ressort_> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#3A_murs
+<http://www.semanticweb.org/laum/constraints#3A_murs> rdf:type owl:NamedIndividual ,
+                                                               :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#3B_epoque
+<http://www.semanticweb.org/laum/constraints#3B_epoque> rdf:type owl:NamedIndividual ,
+                                                                 :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#3a_sols
+<http://www.semanticweb.org/laum/constraints#3a_sols> rdf:type owl:NamedIndividual ,
+                                                               :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#3b_lieu
+<http://www.semanticweb.org/laum/constraints#3b_lieu> rdf:type owl:NamedIndividual ,
+                                                               :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#4A_style
+<http://www.semanticweb.org/laum/constraints#4A_style> rdf:type owl:NamedIndividual ,
+                                                                :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#4B_longueur
+<http://www.semanticweb.org/laum/constraints#4B_longueur> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#4a_meubles
+<http://www.semanticweb.org/laum/constraints#4a_meubles> rdf:type owl:NamedIndividual ,
+                                                                  :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#4b_divers
+<http://www.semanticweb.org/laum/constraints#4b_divers> rdf:type owl:NamedIndividual ,
+                                                                 :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#5A_age_et_sexe
+<http://www.semanticweb.org/laum/constraints#5A_age_et_sexe> rdf:type owl:NamedIndividual ,
+                                                                      :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#5B_vetement
+<http://www.semanticweb.org/laum/constraints#5B_vetement> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#5a_animaux
+<http://www.semanticweb.org/laum/constraints#5a_animaux> rdf:type owl:NamedIndividual ,
+                                                                  :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#5b_tissus_nature
+<http://www.semanticweb.org/laum/constraints#5b_tissus_nature> rdf:type owl:NamedIndividual ,
+                                                                        :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)
+<http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> rdf:type owl:NamedIndividual ,
+                                                                          :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#6A_tissus_matiere
+<http://www.semanticweb.org/laum/constraints#6A_tissus_matiere> rdf:type owl:NamedIndividual ,
+                                                                         :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#6B_accessoires
+<http://www.semanticweb.org/laum/constraints#6B_accessoires> rdf:type owl:NamedIndividual ,
+                                                                      :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#6a_couleurs
+<http://www.semanticweb.org/laum/constraints#6a_couleurs> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#6b_bijoux
+<http://www.semanticweb.org/laum/constraints#6b_bijoux> rdf:type owl:NamedIndividual ,
+                                                                 :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)
+<http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> rdf:type owl:NamedIndividual ,
+                                                                           :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#7A_lectures
+<http://www.semanticweb.org/laum/constraints#7A_lectures> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#7B_tableaux
+<http://www.semanticweb.org/laum/constraints#7B_tableaux> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#7a_musiques
+<http://www.semanticweb.org/laum/constraints#7a_musiques> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#7b_livre
+<http://www.semanticweb.org/laum/constraints#7b_livre> rdf:type owl:NamedIndividual ,
+                                                                :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#8
+<http://www.semanticweb.org/laum/constraints#8> rdf:type owl:NamedIndividual ,
+                                                         :chapter .
+
+
+###  http://www.semanticweb.org/laum/constraints#8A_boissons
+<http://www.semanticweb.org/laum/constraints#8A_boissons> rdf:type owl:NamedIndividual ,
+                                                                   :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#8B_petit_meuble
+<http://www.semanticweb.org/laum/constraints#8B_petit_meuble> rdf:type owl:NamedIndividual ,
+                                                                       :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_1
+<http://www.semanticweb.org/laum/constraints#8_1> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint :chapitre ;
+                                                  :hasText "Winckler,1" ;
+                                                  :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_10
+<http://www.semanticweb.org/laum/constraints#8_10> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#3A_murs> ;
+                                                   :hasText " " ;
+                                                   :hasValue "tissu jute ou autre"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_11
+<http://www.semanticweb.org/laum/constraints#8_11> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#3a_sols> ;
+                                                   :hasText " " ;
+                                                   :hasValue "parquet a batons rompus"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_12
+<http://www.semanticweb.org/laum/constraints#8_12> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#3B_epoque> ;
+                                                   :hasText " " ;
+                                                   :hasValue "18eme"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_13
+<http://www.semanticweb.org/laum/constraints#8_13> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#3b_lieu> ;
+                                                   :hasText " " ;
+                                                   :hasValue "Extreme-Orient"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_14
+<http://www.semanticweb.org/laum/constraints#8_14> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#4A_style> ;
+                                                   :hasText " " ;
+                                                   :hasValue "Louis XV-XVI"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_15
+<http://www.semanticweb.org/laum/constraints#8_15> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#4a_meubles> ;
+                                                   :hasText " " ;
+                                                   :hasValue "bahut, armoire, maie â€¦"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_16
+<http://www.semanticweb.org/laum/constraints#8_16> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#4B_longueur> ;
+                                                   :hasText " " ;
+                                                   :hasValue "+ 12 pages"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_17
+<http://www.semanticweb.org/laum/constraints#8_17> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#4b_divers> ;
+                                                   :hasText " " ;
+                                                   :hasValue "flamme"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_18
+<http://www.semanticweb.org/laum/constraints#8_18> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#5A_age_et_sexe> ;
+                                                   :hasText " " ;
+                                                   :hasValue "jeune femme 18-35"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_19
+<http://www.semanticweb.org/laum/constraints#8_19> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#5a_animaux> ;
+                                                   :hasText " " ;
+                                                   :hasValue "mouche"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_2
+<http://www.semanticweb.org/laum/constraints#8_2> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#1A_position> ;
+                                                  :hasText " " ;
+                                                  :hasValue "assis"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_20
+<http://www.semanticweb.org/laum/constraints#8_20> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#5B_vetement> ;
+                                                   :hasText " " ;
+                                                   :hasValue "veste d'interieur"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_21
+<http://www.semanticweb.org/laum/constraints#8_21> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#5b_tissus_nature> ;
+                                                   :hasText " " ;
+                                                   :hasValue "a pois"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_22
+<http://www.semanticweb.org/laum/constraints#8_22> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#6A_tissus_matiere> ;
+                                                   :hasText " " ;
+                                                   :hasValue "coton"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_23
+<http://www.semanticweb.org/laum/constraints#8_23> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#6a_couleurs> ;
+                                                   :hasText " " ;
+                                                   :hasValue "rouge"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_24
+<http://www.semanticweb.org/laum/constraints#8_24> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#6B_accessoires> ;
+                                                   :hasText " " ;
+                                                   :hasValue "calecons, sous-vetements"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_25
+<http://www.semanticweb.org/laum/constraints#8_25> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#6b_bijoux> ;
+                                                   :hasText " " ;
+                                                   :hasValue "bague"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_26
+<http://www.semanticweb.org/laum/constraints#8_26> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#7A_lectures> ;
+                                                   :hasText " " ;
+                                                   :hasValue "revue"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_27
+<http://www.semanticweb.org/laum/constraints#8_27> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#7a_musiques> ;
+                                                   :hasText " " ;
+                                                   :hasValue "pop et folk"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_28
+<http://www.semanticweb.org/laum/constraints#8_28> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#7B_tableaux> ;
+                                                   :hasText " " ;
+                                                   :hasValue "Le Banquier et sa femme Metsys"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_29
+<http://www.semanticweb.org/laum/constraints#8_29> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#7b_livre> ;
+                                                   :hasText " " ;
+                                                   :hasValue "Ubu Alfred Jarry"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_3
+<http://www.semanticweb.org/laum/constraints#8_3> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#1a_activite> ;
+                                                  :hasText " " ;
+                                                  :hasValue "classer ranger"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_30
+<http://www.semanticweb.org/laum/constraints#8_30> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#8A_boissons> ;
+                                                   :hasText " " ;
+                                                   :hasValue "coca etcâ€¦"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_31
+<http://www.semanticweb.org/laum/constraints#8_31> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#8a_nourriture> ;
+                                                   :hasText " " ;
+                                                   :hasValue "gateaux, sucreries"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_32
+<http://www.semanticweb.org/laum/constraints#8_32> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#8B_petit_meuble> ;
+                                                   :hasText " " ;
+                                                   :hasValue "radio, hifi, etcâ€¦"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_33
+<http://www.semanticweb.org/laum/constraints#8_33> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#8b_jeux> ;
+                                                   :hasText " " ;
+                                                   :hasValue "jaquet"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_34
+<http://www.semanticweb.org/laum/constraints#8_34> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#9A_sentiments> ;
+                                                   :hasText " " ;
+                                                   :hasValue "amour"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_35
+<http://www.semanticweb.org/laum/constraints#8_35> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#9a_peintures> ;
+                                                   :hasText " " ;
+                                                   :hasValue "cartes postales"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_36
+<http://www.semanticweb.org/laum/constraints#8_36> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#9B_surface> ;
+                                                   :hasText " " ;
+                                                   :hasValue "ovale"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_37
+<http://www.semanticweb.org/laum/constraints#8_37> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#9b_volume> ;
+                                                   :hasText " " ;
+                                                   :hasValue "cube"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_38
+<http://www.semanticweb.org/laum/constraints#8_38> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#0A_vegetal> ;
+                                                   :hasText " " ;
+                                                   :hasValue "fleurs"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_39
+<http://www.semanticweb.org/laum/constraints#8_39> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#0a_bibelots> ;
+                                                   :hasText " " ;
+                                                   :hasValue "pierre semi-precieuses"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_4
+<http://www.semanticweb.org/laum/constraints#8_4> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#1B_citation_1> ;
+                                                  :hasText " " ;
+                                                  :hasValue "Flaubert"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_40
+<http://www.semanticweb.org/laum/constraints#8_40> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#0B_manque> ;
+                                                   :hasText " " ;
+                                                   :hasValue "2"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_41
+<http://www.semanticweb.org/laum/constraints#8_41> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#0b_faux> ;
+                                                   :hasText " " ;
+                                                   :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_42
+<http://www.semanticweb.org/laum/constraints#8_42> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#1C_couple_1> ;
+                                                   :hasText " " ;
+                                                   :hasValue "Racine"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_43
+<http://www.semanticweb.org/laum/constraints#8_43> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint <http://www.semanticweb.org/laum/constraints#1c_couple_2> ;
+                                                   :hasText " " ;
+                                                   :hasValue "paturage"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_44
+<http://www.semanticweb.org/laum/constraints#8_44> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :coordonnees ;
+                                                   :hasText "il avait ouvert son bahut et en avait sorti trois petits verres et un carafon de cognac 1938." ;
+                                                   :hasValue "38"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_45
+<http://www.semanticweb.org/laum/constraints#8_45> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "Le faiseur de puzzles s'acharnant dans ses parties de jacquet" ;
+                                                   :hasValue "6"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_46
+<http://www.semanticweb.org/laum/constraints#8_46> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "La jeune Japonaise tenant a bout de bras la torche olympique" ;
+                                                   :hasValue "59"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_47
+<http://www.semanticweb.org/laum/constraints#8_47> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "La petite parfumeuse choisissant les bagues du vieil artisan" ;
+                                                   :hasValue "104"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_48
+<http://www.semanticweb.org/laum/constraints#8_48> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "Monsieur Riri somnolant apres-dejeuner derriere son comptoir" ;
+                                                   :hasValue "120"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_49
+<http://www.semanticweb.org/laum/constraints#8_49> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "Le fabricant d'articles de piete mourant de froid en Argonne" ;
+                                                   :hasValue "159"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_5
+<http://www.semanticweb.org/laum/constraints#8_5> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#1b_citation_2> ;
+                                                  :hasText " " ;
+                                                  :hasValue "Lowry"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_50
+<http://www.semanticweb.org/laum/constraints#8_50> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "Les touristes s'efforcant en vain de refaire la bague turque" ;
+                                                   :hasValue "164"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_51
+<http://www.semanticweb.org/laum/constraints#8_51> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :compendium ;
+                                                   :hasText "Gedeon Spilett retrouvant dans sa poche une ultime allumette" ;
+                                                   :hasValue "177"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_52
+<http://www.semanticweb.org/laum/constraints#8_52> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :histoires ;
+                                                   :hasText "du faiseur de puzzle {Gaspard Winckler}" ;
+                                                   :hasValue "45"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_53
+<http://www.semanticweb.org/laum/constraints#8_53> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :chronologie ;
+                                                   :hasText "naissance de Gaspard Winckler a La Ferte-Milon" ;
+                                                   :hasValue "1910"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_54
+<http://www.semanticweb.org/laum/constraints#8_54> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :chronologie ;
+                                                   :hasText "Gaspard Winckler entre en apprentissage chez M. Gouttman." ;
+                                                   :hasValue "1922"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_55
+<http://www.semanticweb.org/laum/constraints#8_55> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :chronologie ;
+                                                   :hasText "mort de Gouttman." ;
+                                                   :hasValue "1929"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_56
+<http://www.semanticweb.org/laum/constraints#8_56> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :chronologie ;
+                                                   :hasText "Winckler commence a fabriquer des miroirs de sorciere." ;
+                                                   :hasValue "1965"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_57
+<http://www.semanticweb.org/laum/constraints#8_57> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :lieux ;
+                                                   :hasText "Maintenant nous somme dans la piece que Gaspard Winckler appelait le salon" ;
+                                                   :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_58
+<http://www.semanticweb.org/laum/constraints#8_58> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :personnes ;
+                                                   :hasText "Maintenant dans le petit salon, il reste ce qui reste quand il ne reste rien : des mouches par exemple" ;
+                                                   :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_59
+<http://www.semanticweb.org/laum/constraints#8_59> rdf:type owl:NamedIndividual ,
+                                                            :constraint_combo ;
+                                                   :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                   :hasConstraint :action ;
+                                                   :hasText " " ;
+                                                   :hasValue "8"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_6
+<http://www.semanticweb.org/laum/constraints#8_6> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#2A_nombre_personnes> ;
+                                                  :hasText " " ;
+                                                  :hasValue "1."^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_7
+<http://www.semanticweb.org/laum/constraints#8_7> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#2a_role> ;
+                                                  :hasText " " ;
+                                                  :hasValue "occupant"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_8
+<http://www.semanticweb.org/laum/constraints#8_8> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#2B_3e_secteur> ;
+                                                  :hasText " " ;
+                                                  :hasValue "prospectus pharmacie"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8_9
+<http://www.semanticweb.org/laum/constraints#8_9> rdf:type owl:NamedIndividual ,
+                                                           :constraint_combo ;
+                                                  :hasChapter <http://www.semanticweb.org/laum/constraints#8> ;
+                                                  :hasConstraint <http://www.semanticweb.org/laum/constraints#2b_ressort_> ;
+                                                  :hasText " " ;
+                                                  :hasValue "recevoir une lettre"^^xsd:string .
+
+
+###  http://www.semanticweb.org/laum/constraints#8a_nourriture
+<http://www.semanticweb.org/laum/constraints#8a_nourriture> rdf:type owl:NamedIndividual ,
+                                                                     :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#8b_jeux
+<http://www.semanticweb.org/laum/constraints#8b_jeux> rdf:type owl:NamedIndividual ,
+                                                               :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#9A_sentiments
+<http://www.semanticweb.org/laum/constraints#9A_sentiments> rdf:type owl:NamedIndividual ,
+                                                                     :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#9B_surface
+<http://www.semanticweb.org/laum/constraints#9B_surface> rdf:type owl:NamedIndividual ,
+                                                                  :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#9a_peintures
+<http://www.semanticweb.org/laum/constraints#9a_peintures> rdf:type owl:NamedIndividual ,
+                                                                    :constraint .
+
+
+###  http://www.semanticweb.org/laum/constraints#9b_volume
+<http://www.semanticweb.org/laum/constraints#9b_volume> rdf:type owl:NamedIndividual ,
+                                                                 :constraint .
+																 
+																 
+																 
+
+
+
+
+
+:18_1 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :chapitre ;
+	:hasText "Rorschash,2" ;
+	:hasValue "18"^^xsd:string .
+
+:chapitre a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_2 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :1A_position ;
+	:hasText "Â " ;
+	:hasValue "sortir"^^xsd:string .
+
+:1A_position a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_3 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :1a_activite ;
+	:hasText "Â " ;
+	:hasValue "toilette"^^xsd:string .
+
+:1a_activite a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_4 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :1B_citation_1 ;
+	:hasText "Â " ;
+	:hasValue "Roussel"^^xsd:string .
+
+:1B_citation_1 a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_5 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :1b_citation_2 ;
+	:hasText "Â " ;
+	:hasValue "Stendhal"^^xsd:string .
+
+:1b_citation_2 a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_6 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :2A_nombre_personnes ;
+	:hasText "Â " ;
+	:hasValue "3"^^xsd:string .
+
+:2A_nombre_personnes a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_7 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :2a_role ;
+	:hasText "Â " ;
+	:hasValue "client"^^xsd:string .
+
+:2a_role a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_8 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :2B_3e_secteur ;
+	:hasText "Â " ;
+	:hasValue "recette cuisine"^^xsd:string .
+
+:2B_3e_secteur a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_9 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :2b_ressort_ ;
+	:hasText "Â " ;
+	:hasValue "baigner dans la nostalgie"^^xsd:string .
+
+:2b_ressort_ a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_10 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :3A_murs ;
+	:hasText "Â " ;
+	:hasValue "peinture mate"^^xsd:string .
+
+:3A_murs a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_11 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :3a_sols ;
+	:hasText "Â " ;
+	:hasValue "moquette"^^xsd:string .
+
+:3a_sols a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_12 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :3B_epoque ;
+	:hasText "Â " ;
+	:hasValue "antiquite"^^xsd:string .
+
+:3B_epoque a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_13 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :3b_lieu ;
+	:hasText "Â " ;
+	:hasValue "Espagne"^^xsd:string .
+
+:3b_lieu a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_14 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :4A_style ;
+	:hasText "Â " ;
+	:hasValue "modern style, 1900,nouille"^^xsd:string .
+
+:4A_style a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_15 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :4a_meubles ;
+	:hasText "Â " ;
+	:hasValue "table"^^xsd:string .
+
+:4a_meubles a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_16 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :4B_longueur ;
+	:hasText "Â " ;
+	:hasValue "6 pages"^^xsd:string .
+
+:4B_longueur a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_17 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :4b_divers ;
+	:hasText "Â " ;
+	:hasValue "argents (billets)"^^xsd:string .
+
+:4b_divers a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_18 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :5A_age_et_sexe ;
+	:hasText "Â " ;
+	:hasValue "homme 35-60"^^xsd:string .
+
+:5A_age_et_sexe a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_19 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :5a_animaux ;
+	:hasText "Â " ;
+	:hasValue "araignee"^^xsd:string .
+
+:5a_animaux a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_20 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :5B_vetement ;
+	:hasText "Â " ;
+	:hasValue "veste d'interieur"^^xsd:string .
+
+:5B_vetement a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_21 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint <http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> ;
+	:hasText "Â " ;
+	:hasValue "imprimes, a motif"^^xsd:string .
+
+<http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_22 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint <http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> ;
+	:hasText "Â " ;
+	:hasValue "velours"^^xsd:string .
+
+<http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_23 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :6a_couleurs ;
+	:hasText "Â " ;
+	:hasValue "vert"^^xsd:string .
+
+:6a_couleurs a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_24 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :6B_accessoires ;
+	:hasText "Â " ;
+	:hasValue "chapeau"^^xsd:string .
+
+:6B_accessoires a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_25 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :6b_bijoux ;
+	:hasText "Â " ;
+	:hasValue "lunettes"^^xsd:string .
+
+:6b_bijoux a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_26 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :7A_lectures ;
+	:hasText "Â " ;
+	:hasValue "3eme secteur"^^xsd:string .
+
+:7A_lectures a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_27 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :7a_musiques ;
+	:hasText "Â " ;
+	:hasValue "operas"^^xsd:string .
+
+:7a_musiques a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_28 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :7B_tableaux ;
+	:hasText "Â " ;
+	:hasValue "Le Chariot de foin(Jerome Bosch)"^^xsd:string .
+
+:7B_tableaux a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_29 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :7b_livre ;
+	:hasText "Â " ;
+	:hasValue "Dix petits negres(Agatha Christie)"^^xsd:string .
+
+:7b_livre a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_30 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :8A_boissons ;
+	:hasText "Â " ;
+	:hasValue "infusion"^^xsd:string .
+
+:8A_boissons a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_31 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :8a_nourriture ;
+	:hasText "Â " ;
+	:hasValue "gateaux, sucreries"^^xsd:string .
+
+:8a_nourriture a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_32 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :8B_petit_meuble ;
+	:hasText "Â " ;
+	:hasValue "sculptures mobiles"^^xsd:string .
+
+:8B_petit_meuble a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_33 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :8b_jeux ;
+	:hasText "Â " ;
+	:hasValue "puzzle"^^xsd:string .
+
+:8b_jeux a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_34 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :9A_sentiments ;
+	:hasText "Â " ;
+	:hasValue "ennui"^^xsd:string .
+
+:9A_sentiments a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_35 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :9a_peintures ;
+	:hasText "Â " ;
+	:hasValue "aquarelle, gouache"^^xsd:string .
+
+:9a_peintures a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_36 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :9B_surface ;
+	:hasText "Â " ;
+	:hasValue "rectangle"^^xsd:string .
+
+:9B_surface a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_37 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :9b_volume ;
+	:hasText "Â " ;
+	:hasValue "tonneau"^^xsd:string .
+
+:9b_volume a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_38 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :0A_vegetal ;
+	:hasText "Â " ;
+	:hasValue "bois flotte"^^xsd:string .
+
+:0A_vegetal a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_39 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :0a_bibelots ;
+	:hasText "Â " ;
+	:hasValue "or, argent"^^xsd:string .
+
+:0a_bibelots a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_40 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :0B_manque ;
+	:hasText "Â " ;
+	:hasValue "0"^^xsd:string .
+
+:0B_manque a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_41 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :0b_faux ;
+	:hasText "Â " ;
+	:hasValue "6"^^xsd:string .
+
+:0b_faux a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_42 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :1C_couple_1 ;
+	:hasText "Â " ;
+	:hasValue "cendres"^^xsd:string .
+
+:1C_couple_1 a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_43 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :1c_couple_2 ;
+	:hasText "Â " ;
+	:hasValue "paturage"^^xsd:string .
+
+:1c_couple_2 a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_44 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :coordonnees ;
+	:hasText """c'est une piece rectangulaire longue de cinq metres, large de quatre
+un ecrin de verre cercle d'acier contenant 54 pieces anciennes""" ;
+	:hasValue "54"^^xsd:string .
+
+:coordonnees a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_45 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :compendium ;
+	:hasText "Les sept acteurs refusant le role apres avoir lu le scenario" ;
+	:hasValue "51"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_46 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :compendium ;
+	:hasText "Le preteur faisant mourir en un seul jour 30 000 Lusitaniens" ;
+	:hasValue "101"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_47 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :chronologie ;
+	:hasText "Bartlebooth et Smautf traversent la Turquie, la mer Noire, l'URSS, remontent jusqu'au cercle polaire, longent les cotes de Norvege;" ;
+	:hasValue "1954"^^xsd:string .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_48 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :lieux ;
+	:hasText "La salle a manger des Rorschash, a droite du grand vestibule" ;
+	:hasValue "18"^^xsd:string .
+
+:lieux a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_49 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :personnes ;
+	:hasText "Elle est vide." ;
+	:hasValue "18"^^xsd:string .
+
+:personnes a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+
+:18_50 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :18 ;
+	:hasConstraint :action ;
+	:hasText "AUCUNE" ;
+	:hasValue "18"^^xsd:string .
+
+:action a owl:NamedIndividual , :constraint .
+
+:18 a owl:NamedIndividual , :chapter .
+								
+
+
+
+
+:26_1 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chapitre ;
+	:hasValue "26"^^xsd:string ;
+	:hasText "Bartlebooth,1" .
+
+:chapitre a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_2 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :1A_position ;
+	:hasValue "un bras en l'air"^^xsd:string ;
+	:hasText " " .
+
+:1A_position a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_3 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :1a_activite ;
+	:hasValue "reparer"^^xsd:string ;
+	:hasText " " .
+
+:1a_activite a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_4 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :1B_citation_1 ;
+	:hasValue "Roussel"^^xsd:string ;
+	:hasText " " .
+
+:1B_citation_1 a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_5 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :1b_citation_2 ;
+	:hasValue "Freud"^^xsd:string ;
+	:hasText " " .
+
+:1b_citation_2 a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_6 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :2A_nombre_personnes ;
+	:hasValue "+5"^^xsd:string ;
+	:hasText " " .
+
+:2A_nombre_personnes a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_7 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :2a_role ;
+	:hasValue "domestique"^^xsd:string ;
+	:hasText " " .
+
+:2a_role a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_8 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :2B_3e_secteur ;
+	:hasValue "faire-part"^^xsd:string ;
+	:hasText " " .
+
+:2B_3e_secteur a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_9 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :2b_ressort_ ;
+	:hasValue "poursuivre une chimere"^^xsd:string ;
+	:hasText " " .
+
+:2b_ressort_ a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_10 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :3A_murs ;
+	:hasValue "peinture mate"^^xsd:string ;
+	:hasText " " .
+
+:3A_murs a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_11 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :3a_sols ;
+	:hasValue "lino"^^xsd:string ;
+	:hasText " " .
+
+:3a_sols a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_12 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :3B_epoque ;
+	:hasValue "renaissance"^^xsd:string ;
+	:hasText " " .
+
+:3B_epoque a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_13 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :3b_lieu ;
+	:hasValue "Moyen-Orient"^^xsd:string ;
+	:hasText " " .
+
+:3b_lieu a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_14 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :4A_style ;
+	:hasValue "rustique"^^xsd:string ;
+	:hasText " " .
+
+:4A_style a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_15 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :4a_meubles ;
+	:hasValue "chaise"^^xsd:string ;
+	:hasText " " .
+
+:4a_meubles a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_16 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :4B_longueur ;
+	:hasValue "10 pages"^^xsd:string ;
+	:hasText " " .
+
+:4B_longueur a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_17 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :4b_divers ;
+	:hasValue "argents (billets)"^^xsd:string ;
+	:hasText " " .
+
+:4b_divers a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_18 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :5A_age_et_sexe ;
+	:hasValue "jeune femme 18-35"^^xsd:string ;
+	:hasText " " .
+
+:5A_age_et_sexe a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_19 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :5a_animaux ;
+	:hasValue "poisson"^^xsd:string ;
+	:hasText " " .
+
+:5a_animaux a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_20 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :5B_vetement ;
+	:hasValue "chandailâ€¦"^^xsd:string ;
+	:hasText " " .
+
+:5B_vetement a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_21 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint <http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> ;
+	:hasValue "uni"^^xsd:string ;
+	:hasText " " .
+
+<http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_22 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint <http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> ;
+	:hasValue "velours"^^xsd:string ;
+	:hasText " " .
+
+<http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_23 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :6a_couleurs ;
+	:hasValue "blanc"^^xsd:string ;
+	:hasText " " .
+
+:6a_couleurs a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_24 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :6B_accessoires ;
+	:hasValue "ceintures"^^xsd:string ;
+	:hasText " " .
+
+:6B_accessoires a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_25 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :6b_bijoux ;
+	:hasValue "medailles, decorations"^^xsd:string ;
+	:hasText " " .
+
+:6b_bijoux a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_26 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :7A_lectures ;
+	:hasValue "roman, essai"^^xsd:string ;
+	:hasText " " .
+
+:7A_lectures a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_27 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :7a_musiques ;
+	:hasValue "jazz"^^xsd:string ;
+	:hasText " " .
+
+:7a_musiques a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_28 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :7B_tableaux ;
+	:hasValue "Le Songe de Ste Ursule(Carpaccio)"^^xsd:string ;
+	:hasText " " .
+
+:7B_tableaux a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_29 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :7b_livre ;
+	:hasValue "Moby Dick(Herman Melville)"^^xsd:string ;
+	:hasText " " .
+
+:7b_livre a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_30 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :8A_boissons ;
+	:hasValue "infusion"^^xsd:string ;
+	:hasText " " .
+
+:8A_boissons a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_31 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :8a_nourriture ;
+	:hasValue "poissons et crustaces"^^xsd:string ;
+	:hasText " " .
+
+:8a_nourriture a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_32 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :8B_petit_meuble ;
+	:hasValue "cendriers"^^xsd:string ;
+	:hasText " " .
+
+:8B_petit_meuble a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_33 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :8b_jeux ;
+	:hasValue "go, echecs, dames"^^xsd:string ;
+	:hasText " " .
+
+:8b_jeux a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_34 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :9A_sentiments ;
+	:hasValue "ennui"^^xsd:string ;
+	:hasText " " .
+
+:9A_sentiments a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_35 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :9a_peintures ;
+	:hasValue "cartes postales"^^xsd:string ;
+	:hasText " " .
+
+:9a_peintures a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_36 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :9B_surface ;
+	:hasValue "carre"^^xsd:string ;
+	:hasText " " .
+
+:9B_surface a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_37 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :9b_volume ;
+	:hasValue "pyramide"^^xsd:string ;
+	:hasText " " .
+
+:9b_volume a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_38 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :0A_vegetal ;
+	:hasValue "arbustes"^^xsd:string ;
+	:hasText " " .
+
+:0A_vegetal a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_39 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :0a_bibelots ;
+	:hasValue "minerai de metal"^^xsd:string ;
+	:hasText " " .
+
+:0a_bibelots a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_40 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :0B_manque ;
+	:hasValue "5"^^xsd:string ;
+	:hasText " " .
+
+:0B_manque a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_41 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :0b_faux ;
+	:hasValue "8"^^xsd:string ;
+	:hasText " " .
+
+:0b_faux a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_42 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :1C_couple_1 ;
+	:hasValue "Nuit"^^xsd:string ;
+	:hasText " " .
+
+:1C_couple_1 a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_43 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :1c_couple_2 ;
+	:hasValue "paturage"^^xsd:string ;
+	:hasText " " .
+
+:1c_couple_2 a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_44 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :coordonnees ;
+	:hasValue "63"^^xsd:string ;
+	:hasText "Gaspard Winckler decede a Paris le 29 octobre 1973 dans sa 63o annee" .
+
+:coordonnees a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_45 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :compendium ;
+	:hasValue "24"^^xsd:string ;
+	:hasText "Le jeune milliardaire etudiant l'aquarelle en knickerbockers" .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_46 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :compendium ;
+	:hasValue "35"^^xsd:string ;
+	:hasText "La cuisiniere n'ayant a faire qu'un oeuf et du haddock poche" .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_47 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :compendium ;
+	:hasValue "85"^^xsd:string ;
+	:hasText "Le chauffeur ne conduisant plus s'amusant avec des reussites" .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_48 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :histoires ;
+	:hasValue "62"^^xsd:string ;
+	:hasText "de lâ€™homme qui peignit des aquarelles et en fit des puzzles {Percival Bartlebooth}" .
+
+:histoires a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_49 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chronologie ;
+	:hasValue "1910"^^xsd:string ;
+	:hasText "naissance de Gaspard Winckler a La Ferte-Milon" .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_50 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chronologie ;
+	:hasValue "1925"^^xsd:string ;
+	:hasText "Battlebooth commence a prendre des lecons d'aquarelle." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_51 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chronologie ;
+	:hasValue "1955"^^xsd:string ;
+	:hasText "Bartlebooth commence a reconstituer les puzzles de Gaspard Winckler." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_52 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chronologie ;
+	:hasValue "1955"^^xsd:string ;
+	:hasText "Kleber entre au service de Bartlebooth." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_53 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chronologie ;
+	:hasValue "1971"^^xsd:string ;
+	:hasText "Mme Adele prend sa retraite." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_54 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chronologie ;
+	:hasValue "29 octobre 1973"^^xsd:string ;
+	:hasText "mort de Gaspard Winckler." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_55 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :chap.99 ;
+	:hasValue "26"^^xsd:string ;
+	:hasText "Kleber fait une reussite et Helene recoud la manche de Smautf" .
+
+:chap.99 a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_56 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :lieux ;
+	:hasValue "26"^^xsd:string ;
+	:hasText " " .
+
+:lieux a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_57 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :personnes ;
+	:hasValue "26"^^xsd:string ;
+	:hasText " " .
+
+:personnes a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+:26_58 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :26 ;
+	:hasConstraint :action ;
+	:hasValue "26"^^xsd:string ;
+	:hasText " " .
+
+:action a owl:NamedIndividual , :constraint .
+
+:26 a owl:NamedIndividual , :chapter .
+
+
+:70_1 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chapitre ;
+	:hasValue "70"^^xsd:string ;
+	:hasText "Bartlebooth,2" .
+
+:chapitre a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_2 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :1A_position ;
+	:hasValue "a plat ventre"^^xsd:string ;
+	:hasText " " .
+
+:1A_position a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_3 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :1a_activite ;
+	:hasValue "manger"^^xsd:string ;
+	:hasText " " .
+
+:1a_activite a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_4 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :1B_citation_1 ;
+	:hasValue "Borges"^^xsd:string ;
+	:hasText " " .
+
+:1B_citation_1 a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_5 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :1b_citation_2 ;
+	:hasValue "Nabokov"^^xsd:string ;
+	:hasText " " .
+
+:1b_citation_2 a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_6 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :2A_nombre_personnes ;
+	:hasValue "1."^^xsd:string ;
+	:hasText " " .
+
+:2A_nombre_personnes a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_7 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :2a_role ;
+	:hasValue "fournisseur"^^xsd:string ;
+	:hasText " " .
+
+:2a_role a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_8 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :2B_3e_secteur ;
+	:hasValue "agendas, calendriers"^^xsd:string ;
+	:hasText " " .
+
+:2B_3e_secteur a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_9 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :2b_ressort_ ;
+	:hasValue "revenir de voyage"^^xsd:string ;
+	:hasText " " .
+
+:2b_ressort_ a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_10 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :3A_murs ;
+	:hasValue "tissu jute ou autre"^^xsd:string ;
+	:hasText " " .
+
+:3A_murs a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_11 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :3a_sols ;
+	:hasValue "parquet a point de Hongrie"^^xsd:string ;
+	:hasText " " .
+
+:3a_sols a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_12 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :3B_epoque ;
+	:hasValue "avant 39"^^xsd:string ;
+	:hasText " " .
+
+:3B_epoque a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_13 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :3b_lieu ;
+	:hasValue "Espagne"^^xsd:string ;
+	:hasText " " .
+
+:3b_lieu a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_14 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :4A_style ;
+	:hasValue "camping"^^xsd:string ;
+	:hasText " " .
+
+:4A_style a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_15 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :4a_meubles ;
+	:hasValue "gueridon, etcâ€¦"^^xsd:string ;
+	:hasText " " .
+
+:4a_meubles a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_16 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :4B_longueur ;
+	:hasValue "1 page"^^xsd:string ;
+	:hasText " " .
+
+:4B_longueur a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_17 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :4b_divers ;
+	:hasValue "militaires"^^xsd:string ;
+	:hasText " " .
+
+:4b_divers a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_18 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :5A_age_et_sexe ;
+	:hasValue "vieillard femme"^^xsd:string ;
+	:hasText " " .
+
+:5A_age_et_sexe a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_19 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :5a_animaux ;
+	:hasValue "oiseau"^^xsd:string ;
+	:hasText " " .
+
+:5a_animaux a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_20 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :5B_vetement ;
+	:hasValue "costume, ensemble"^^xsd:string ;
+	:hasText " " .
+
+:5B_vetement a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_21 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint <http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> ;
+	:hasValue "a pois"^^xsd:string ;
+	:hasText " " .
+
+<http://www.semanticweb.org/laum/constraints#5b_tissus_(nature)> a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_22 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint <http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> ;
+	:hasValue "lin"^^xsd:string ;
+	:hasText " " .
+
+<http://www.semanticweb.org/laum/constraints#6A_tissus_(matiere)> a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_23 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :6a_couleurs ;
+	:hasValue "orange"^^xsd:string ;
+	:hasText " " .
+
+:6a_couleurs a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_24 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :6B_accessoires ;
+	:hasValue "chapeau"^^xsd:string ;
+	:hasText " " .
+
+:6B_accessoires a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_25 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :6b_bijoux ;
+	:hasValue "collier"^^xsd:string ;
+	:hasText " " .
+
+:6b_bijoux a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_26 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :7A_lectures ;
+	:hasValue "quotidien"^^xsd:string ;
+	:hasText " " .
+
+:7A_lectures a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_27 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :7a_musiques ;
+	:hasValue "contemporain"^^xsd:string ;
+	:hasText " " .
+
+:7a_musiques a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_28 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :7B_tableaux ;
+	:hasValue "Les Menines(Velasquez)"^^xsd:string ;
+	:hasText " " .
+
+:7B_tableaux a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_29 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :7b_livre ;
+	:hasValue "Hamlet(William Shakespeare)"^^xsd:string ;
+	:hasText " " .
+
+:7b_livre a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_30 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :8A_boissons ;
+	:hasValue "cafe"^^xsd:string ;
+	:hasText " " .
+
+:8A_boissons a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_31 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :8a_nourriture ;
+	:hasValue "viandes, abats, gibier"^^xsd:string ;
+	:hasText " " .
+
+:8a_nourriture a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_32 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :8B_petit_meuble ;
+	:hasValue "boÃ®tes"^^xsd:string ;
+	:hasText " " .
+
+:8B_petit_meuble a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_33 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :8b_jeux ;
+	:hasValue "mots croises"^^xsd:string ;
+	:hasText " " .
+
+:8b_jeux a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_34 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :9A_sentiments ;
+	:hasValue "colere"^^xsd:string ;
+	:hasText " " .
+
+:9A_sentiments a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_35 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :9a_peintures ;
+	:hasValue "affiches"^^xsd:string ;
+	:hasText " " .
+
+:9a_peintures a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_36 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :9B_surface ;
+	:hasValue "trapeze"^^xsd:string ;
+	:hasText " " .
+
+:9B_surface a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_37 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :9b_volume ;
+	:hasValue "oeuf"^^xsd:string ;
+	:hasText " " .
+
+:9b_volume a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_38 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :0A_vegetal ;
+	:hasValue "fleurs seches"^^xsd:string ;
+	:hasText " " .
+
+:0A_vegetal a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_39 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :0a_bibelots ;
+	:hasValue "marbre"^^xsd:string ;
+	:hasText " " .
+
+:0a_bibelots a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_40 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :0B_manque ;
+	:hasValue "4"^^xsd:string ;
+	:hasText " " .
+
+:0B_manque a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_41 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :0b_faux ;
+	:hasValue "9"^^xsd:string ;
+	:hasText " " .
+
+:0b_faux a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_42 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :1C_couple_1 ;
+	:hasValue "Philemon"^^xsd:string ;
+	:hasText " " .
+
+:1C_couple_1 a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_43 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :1c_couple_2 ;
+	:hasValue "Prejuge"^^xsd:string ;
+	:hasText " " .
+
+:1c_couple_2 a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_44 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :coordonnees ;
+	:hasValue "62"^^xsd:string ;
+	:hasText "Une fois il resta assis 62 heures d'affilee devant un puzzle inacheve" .
+
+:coordonnees a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_45 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :compendium ;
+	:hasValue "44"^^xsd:string ;
+	:hasText "Scipion definissant par du vieux avec du neuf un nonagenaire" .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_46 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :compendium ;
+	:hasValue "174"^^xsd:string ;
+	:hasText "La dame en robe a pois faisant du tricot au bord de la plage" .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_47 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :histoires ;
+	:hasValue "67"^^xsd:string ;
+	:hasText """de lâ€™importateur de Lisbonne et de son correspondant egyptien
+{FarÃ®d Abu Talif}""" .
+
+:histoires a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_48 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "mars 1936"^^xsd:string ;
+	:hasText "Bartlebooth est en Ecosse (Ã®le de Skye)." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_49 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "decembre 1937"^^xsd:string ;
+	:hasText "Bartlebooth est au cap Saint-Vincent (Portugal)." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_50 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "fevrier 1938"^^xsd:string ;
+	:hasText "Bartlebooth est a Hammamet;" .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_51 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "juin 1938"^^xsd:string ;
+	:hasText "Bartlebooth est a Alexandrie." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_52 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "01/11/1948"^^xsd:string ;
+	:hasText "Bartlebooth est en Californie (Santa Catalina Island)." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_53 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "octobre 1951"^^xsd:string ;
+	:hasText "Bartlebooth est a Okinawa." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_54 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :chronologie ;
+	:hasValue "octobre 1952"^^xsd:string ;
+	:hasText "Bartlebooth est en Tasmanie." .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_55 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :lieux ;
+	:hasValue "70"^^xsd:string ;
+	:hasText " " .
+
+:lieux a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_56 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :personnes ;
+	:hasValue "70"^^xsd:string ;
+	:hasText " " .
+
+:personnes a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+:70_57 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :70 ;
+	:hasConstraint :action ;
+	:hasValue "70"^^xsd:string ;
+	:hasText " " .
+
+:action a owl:NamedIndividual , :constraint .
+
+:70 a owl:NamedIndividual , :chapter .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

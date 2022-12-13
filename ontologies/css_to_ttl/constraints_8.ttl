@@ -1,0 +1,596 @@
+@prefix : <http://www.semanticweb.org/laum/constraints#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:8_1 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :chapitre ;
+	:hasText "Winckler,1" ;
+	:hasValue "8"^^xsd:string .
+
+:chapitre a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_2 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :1A_position ;
+	:hasText " " ;
+	:hasValue "assis"^^xsd:string .
+
+:1A_position a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_3 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :1a_activite ;
+	:hasText " " ;
+	:hasValue "classer ranger"^^xsd:string .
+
+:1a_activite a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_4 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :1B_citation_1 ;
+	:hasText " " ;
+	:hasValue "Flaubert"^^xsd:string .
+
+:1B_citation_1 a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_5 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :1b_citation_2 ;
+	:hasText " " ;
+	:hasValue "Lowry"^^xsd:string .
+
+:1b_citation_2 a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_6 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :2A_nombre_personnes ;
+	:hasText " " ;
+	:hasValue "1."^^xsd:string .
+
+:2A_nombre_personnes a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_7 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :2a_role ;
+	:hasText " " ;
+	:hasValue "occupant"^^xsd:string .
+
+:2a_role a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_8 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :2B_3e_secteur ;
+	:hasText " " ;
+	:hasValue "prospectus pharmacie"^^xsd:string .
+
+:2B_3e_secteur a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_9 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :2b_ressort_ ;
+	:hasText " " ;
+	:hasValue "recevoir une lettre"^^xsd:string .
+
+:2b_ressort_ a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_10 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :3A_murs ;
+	:hasText " " ;
+	:hasValue "tissu jute ou autre"^^xsd:string .
+
+:3A_murs a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_11 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :3a_sols ;
+	:hasText " " ;
+	:hasValue "parquet a batons rompus"^^xsd:string .
+
+:3a_sols a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_12 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :3B_epoque ;
+	:hasText " " ;
+	:hasValue "18eme"^^xsd:string .
+
+:3B_epoque a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_13 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :3b_lieu ;
+	:hasText " " ;
+	:hasValue "Extreme-Orient"^^xsd:string .
+
+:3b_lieu a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_14 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :4A_style ;
+	:hasText " " ;
+	:hasValue "Louis XV-XVI"^^xsd:string .
+
+:4A_style a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_15 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :4a_meubles ;
+	:hasText " " ;
+	:hasValue "bahut, armoire, maie â€¦"^^xsd:string .
+
+:4a_meubles a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_16 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :4B_longueur ;
+	:hasText " " ;
+	:hasValue "+ 12 pages"^^xsd:string .
+
+:4B_longueur a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_17 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :4b_divers ;
+	:hasText " " ;
+	:hasValue "flamme"^^xsd:string .
+
+:4b_divers a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_18 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :5A_age_et_sexe ;
+	:hasText " " ;
+	:hasValue "jeune femme 18-35"^^xsd:string .
+
+:5A_age_et_sexe a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_19 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :5a_animaux ;
+	:hasText " " ;
+	:hasValue "mouche"^^xsd:string .
+
+:5a_animaux a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_20 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :5B_vetement ;
+	:hasText " " ;
+	:hasValue "veste d'interieur"^^xsd:string .
+
+:5B_vetement a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_21 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :5b_tissus_nature ;
+	:hasText " " ;
+	:hasValue "a pois"^^xsd:string .
+
+:5b_tissus_nature a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_22 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :6A_tissus_matiere ;
+	:hasText " " ;
+	:hasValue "coton"^^xsd:string .
+
+:6A_tissus_matiere a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_23 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :6a_couleurs ;
+	:hasText " " ;
+	:hasValue "rouge"^^xsd:string .
+
+:6a_couleurs a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_24 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :6B_accessoires ;
+	:hasText " " ;
+	:hasValue "calecons, sous-vetements"^^xsd:string .
+
+:6B_accessoires a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_25 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :6b_bijoux ;
+	:hasText " " ;
+	:hasValue "bague"^^xsd:string .
+
+:6b_bijoux a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_26 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :7A_lectures ;
+	:hasText " " ;
+	:hasValue "revue"^^xsd:string .
+
+:7A_lectures a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_27 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :7a_musiques ;
+	:hasText " " ;
+	:hasValue "pop et folk"^^xsd:string .
+
+:7a_musiques a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_28 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :7B_tableaux ;
+	:hasText " " ;
+	:hasValue "Le Banquier et sa femme Metsys"^^xsd:string .
+
+:7B_tableaux a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_29 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :7b_livre ;
+	:hasText " " ;
+	:hasValue "Ubu Alfred Jarry"^^xsd:string .
+
+:7b_livre a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_30 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :8A_boissons ;
+	:hasText " " ;
+	:hasValue "coca etcâ€¦"^^xsd:string .
+
+:8A_boissons a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_31 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :8a_nourriture ;
+	:hasText " " ;
+	:hasValue "gateaux, sucreries"^^xsd:string .
+
+:8a_nourriture a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_32 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :8B_petit_meuble ;
+	:hasText " " ;
+	:hasValue "radio, hifi, etcâ€¦"^^xsd:string .
+
+:8B_petit_meuble a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_33 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :8b_jeux ;
+	:hasText " " ;
+	:hasValue "jaquet"^^xsd:string .
+
+:8b_jeux a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_34 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :9A_sentiments ;
+	:hasText " " ;
+	:hasValue "amour"^^xsd:string .
+
+:9A_sentiments a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_35 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :9a_peintures ;
+	:hasText " " ;
+	:hasValue "cartes postales"^^xsd:string .
+
+:9a_peintures a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_36 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :9B_surface ;
+	:hasText " " ;
+	:hasValue "ovale"^^xsd:string .
+
+:9B_surface a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_37 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :9b_volume ;
+	:hasText " " ;
+	:hasValue "cube"^^xsd:string .
+
+:9b_volume a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_38 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :0A_vegetal ;
+	:hasText " " ;
+	:hasValue "fleurs"^^xsd:string .
+
+:0A_vegetal a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_39 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :0a_bibelots ;
+	:hasText " " ;
+	:hasValue "pierre semi-precieuses"^^xsd:string .
+
+:0a_bibelots a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_40 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :0B_manque ;
+	:hasText " " ;
+	:hasValue "2"^^xsd:string .
+
+:0B_manque a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_41 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :0b_faux ;
+	:hasText " " ;
+	:hasValue "8"^^xsd:string .
+
+:0b_faux a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_42 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :1C_couple_1 ;
+	:hasText " " ;
+	:hasValue "Racine"^^xsd:string .
+
+:1C_couple_1 a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_43 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :1c_couple_2 ;
+	:hasText " " ;
+	:hasValue "paturage"^^xsd:string .
+
+:1c_couple_2 a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_44 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :coordonnees ;
+	:hasText "il avait ouvert son bahut et en avait sorti trois petits verres et un carafon de cognac 1938." ;
+	:hasValue "38"^^xsd:string .
+
+:coordonnees a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_45 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "Le faiseur de puzzles s'acharnant dans ses parties de jacquet" ;
+	:hasValue "6"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_46 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "La jeune Japonaise tenant a bout de bras la torche olympique" ;
+	:hasValue "59"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_47 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "La petite parfumeuse choisissant les bagues du vieil artisan" ;
+	:hasValue "104"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_48 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "Monsieur Riri somnolant apres-dejeuner derriere son comptoir" ;
+	:hasValue "120"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_49 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "Le fabricant d'articles de piete mourant de froid en Argonne" ;
+	:hasValue "159"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_50 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "Les touristes s'efforcant en vain de refaire la bague turque" ;
+	:hasValue "164"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_51 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :compendium ;
+	:hasText "Gedeon Spilett retrouvant dans sa poche une ultime allumette" ;
+	:hasValue "177"^^xsd:string .
+
+:compendium a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_52 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :histoires ;
+	:hasText "du faiseur de puzzle {Gaspard Winckler}" ;
+	:hasValue "45"^^xsd:string .
+
+:histoires a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_53 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :chronologie ;
+	:hasText "naissance de Gaspard Winckler a La Ferte-Milon" ;
+	:hasValue "1910"^^xsd:string .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_54 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :chronologie ;
+	:hasText "Gaspard Winckler entre en apprentissage chez M. Gouttman." ;
+	:hasValue "1922"^^xsd:string .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_55 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :chronologie ;
+	:hasText "mort de Gouttman." ;
+	:hasValue "1929"^^xsd:string .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_56 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :chronologie ;
+	:hasText "Winckler commence a fabriquer des miroirs de sorciere." ;
+	:hasValue "1965"^^xsd:string .
+
+:chronologie a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_57 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :lieux ;
+	:hasText "Maintenant nous somme dans la piece que Gaspard Winckler appelait le salon" ;
+	:hasValue "8"^^xsd:string .
+
+:lieux a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_58 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :personnes ;
+	:hasText "Maintenant dans le petit salon, il reste ce qui reste quand il ne reste rien : des mouches par exemple" ;
+	:hasValue "8"^^xsd:string .
+
+:personnes a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
+
+:8_59 a owl:NamedIndividual , :constraint_combo ;
+	:hasChapter :8 ;
+	:hasConstraint :action ;
+	:hasText " " ;
+	:hasValue "8"^^xsd:string .
+
+:action a owl:NamedIndividual , :constraint .
+
+:8 a owl:NamedIndividual , :chapter .
