@@ -1,0 +1,16 @@
+Optional.of(http://www.semanticweb.org/chessmoves)
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#L1,-22.059999999999985,297.20846153846145
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#V2C,174.20846153846165,453.3426923076923
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#MoveStage,88.44884615384527,350.413846153847
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#L2,238.45576923076925,296.5476923076924
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#Direction,509.13333333333463,259.9777777777772
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#Piece,274.0,93.14444444444446
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#H1C,269.81269230769243,451.39923076923066
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#Diagonal,632.0,604.0
+http://www.w3.org/2002/07/owl#Thing,264.0,16.0
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#H2C,-73.43807692307689,453.3957692307694
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#Horizontal,306.8057692307695,603.0565384615385
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#Vertical,479.1484615384617,604.0
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#Knight,272.38888888888897,186.0
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#V1C,15.053076923076942,450.3992307692311
+http://www.semanticweb.org/diego/ontologies/2022/7/chessmoves#DisjMoveType,81.0,207.0
