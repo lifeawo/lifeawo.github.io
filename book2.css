@@ -384,7 +384,9 @@ article:nth-child(47) {
     border-right: solid 1px #1e1e1e;
 }
 
-article:nth-child(15), article:nth-child(20), article:nth-child(22) {
+article:nth-child(15), article:nth-child(20), article:nth-child(22), article:nth-child(25),
+article:nth-child(26), article:nth-child(29), article:nth-child(31), article:nth-child(34),
+article:nth-child(36), article:nth-child(39), article:nth-child(41), article:nth-child(43), article:nth-child(50){
     border-left: solid 1px #1e1e1e;
 }
 

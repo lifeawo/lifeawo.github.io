@@ -141,7 +141,7 @@ article {
     place-content: center;
 }
 
-article:first-child:hover, article:nth-child(47):hover,  article:nth-child(18):hover, article:nth-child(16):hover {
+article:first-child:hover, article:nth-child(49):hover,  article:nth-child(18):hover, article:nth-child(16):hover {
     background-color: #1e1e1e;
 }
 
@@ -270,7 +270,7 @@ article:first-child {
     border: solid 1px #1e1e1e;
 }
 
-article:first-child:hover #logo, article:nth-child(47):hover #door,  article:nth-child(18):hover #arrow, article:nth-child(16):hover #arrow2 {
+article:first-child:hover #logo, article:nth-child(49):hover #door,  article:nth-child(18):hover #arrow, article:nth-child(16):hover #arrow2 {
     filter: invert(1);
 }
 
@@ -377,7 +377,9 @@ article:nth-child(47){
 }
 
 article:nth-child(15), article:nth-child(20), article:nth-child(22),
-article:nth-child(25), article:nth-child(27) {
+article:nth-child(25), article:nth-child(27),  article:nth-child(30),
+article:nth-child(32), article:nth-child(35), article:nth-child(37),
+article:nth-child(40),article:nth-child(42), article:nth-child(44), article:nth-child(47), article:nth-child(51)  {
     border-left: solid 1px #1e1e1e;
 }
 

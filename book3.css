@@ -338,6 +338,13 @@ article:nth-child(17){
     border-right: solid 1px #1e1e1e;
 }
 
+article:nth-child(24), article:nth-child(27), article:nth-child(28), article:nth-child(29),
+article:nth-child(32), article:nth-child(33), article:nth-child(35), article:nth-child(37),
+article:nth-child(39), article:nth-child(41) , article:nth-child(43),  article:nth-child(45), 
+article:nth-child(50)  {
+    border-left: solid 1px #1e1e1e;
+}
+
 
 
 article:nth-child(21), article:nth-child(23),

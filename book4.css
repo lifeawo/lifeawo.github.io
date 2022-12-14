@@ -344,7 +344,8 @@ article:nth-child(8) {
 }
 
 article:nth-child(15), article:nth-child(20), article:nth-child(22), article:nth-child(24),
-article:nth-child(26), article:nth-child(28), article:nth-child(30), article:nth-child(35)
+article:nth-child(26), article:nth-child(27), article:nth-child(28), article:nth-child(29),
+article:nth-child(30),article:nth-child(31), article:nth-child(35)
 {
     border-left: solid 1px #1e1e1e;
 }
