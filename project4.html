@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="project4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&&family=Sono:wght@200;400;500;700;800&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet for SPARQL Query lighboxes -->
+    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
+
+</head>
+<body>
+    <section>
+
+        <article> <!--1-->
+            <a href="./index.html">
+            <img id="logo" src="./img/logolawo.png"/>
+        </a>
+        </article>
+
+        <article> <!--2-->
+
+        </article>
+
+        <article> <!--3-->
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--5-->
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--9-->
+            <div class="nav">
+            <a href="./book.html">
+                <h2 >The <br/>Book</h2>
+            </a>
+             </div>
+        </article>
+
+        <article> <!--10-->
+            <div class="nav">
+            <a href="./project.html">
+                <h2>The <br/>Project</h2>
+                </a>
+            </div>
+
+
+        </article>
+
+        <article><!--11-->
+            <div class="nav">
+            <a href="myDocumentation/index-en.html" target="_blank">
+                <h2>Ontology</h2>
+            </a>
+            </div>
+
+        </article>
+
+        <article><!--12-->
+            <div class="nav">
+                <a href="./sparse.html">
+                    <h2>Sparse Parts</h2>
+                </a>
+                </div>
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--15-->
+
+
+        </article>
+
+        <article><!--16-->
+            <a href="./project3.html"><img id="arrow2" src="./img/arrow.png"/></a>
+
+        </article>
+
+        <article> <!--17-->
+            <div class="text">
+                <h4>Third Step:</h4>
+                <h5>Linking Constraints to Cells</h5>
+
+            </div>
+
+        </article>
+
+        <article> <!--18-->
+          <a href="./sparse.html"><img id="arrow" src="./img/arrow.png"/></a>
+        </article>
+
+        <article> <!--19-->
+
+        </article>
+
+        <article> <!--20-->
+
+        </article>
+
+        <article>
+           <div class="text">
+                <p class="margin">As a final step, <b>the former two need to be linked</b>. The machine must attribute the values of the <i>Cahier des Charges</i> to the novel's chapters.</p>
+                <p class="margin">Every chapter has a value for every one of the 42 categories, obtained by applying the Double Latin Square and the <i>"pseudo-quenine"</i> base 10. This attribution never changes, even if we change the constraints, their values, or the places and characters of the story.</p>
+                <p><b>This story-making machine works for other novels based on a 10x10 map with 42 categories of constraints</b>.</p>
+                </div>
+
+        </article>
+
+        <article>
+
+
+        </article>
+
+        <article><!--23-->
+
+
+        </article>
+
+        <article> <!--24-->
+ <div class="text">
+                <h4>Competency Questions</h4>
+            </div>
+
+
+        </article>
+
+        <article> <!--25-->
+            <div class="text">
+                <ol>
+                    <li>What is the value of constraint “époque” for chapter 8? (18ème)</li>
+                    <li>What is the value of constraint “végétal” for chapter 70? (fleurs séchés)</li>
+                    <li>What chapters have value “amour” in the “sentiments” constraint? (8, 17, 34, 40, 59, 66, 82, 85, 87, 91)</li>
+                    <li>What constraints are defined for chapter 76?
+                      <ul>
+                        <li>1A position = couché sur le dos</li>
+                        <li>1a activité = lire, écrire</li>
+                        <li>1B citation 1 = Verne</li>
+                        <li>1b citation 2 = Calvino</li>
+                        <li>...(see the complete answer <a href="http://escarbille.free.fr/vme/?chap=99" target="_blank">here</a>)</li>
+                      </ul>
+                    </li>
+                    <li>What are the constraints of the missing cell/chapter? (click <a href="http://escarbille.free.fr/vme/?chap=90" target="_blank">here</a> for the answer)<br/>
+                  </ol>
+        </div>
+
+
+        </article>
+
+        <article> <!--26-->
+
+
+        </article>
+
+        <article><!--27-->
+
+
+        </article>
+
+        <article><!--28-->
+
+
+        </article>
+
+        <article>
+            <div class="text">
+                <p><b>Classes:</b></p>
+                <p class="margin">This step doesn't introduce new classes.</p>
+                    <p><strong>Object Properties:</strong></p>
+
+                    <ul>
+                        <li>hasConstraintValue (?chapter, ?constraint)</li>
+                        <li>belongsToChapter (?constraint, ?chapter)</li>
+                      </ul>
+                </div>
+
+
+        </article>
+
+        <article> <!--30-->
+            <div class="text">
+                <h4>Elements</h4>
+            </div>
+
+
+        </article>
+
+        <article> <!--31-->
+
+
+
+        </article>
+
+
+        <article> <!--32-->
+            <div class="text">
+                <h4>Generic Use Cases</h4>
+            </div>
+
+
+        </article>
+
+        <article><!--33-->
+            <div class="text">
+                <p>Given the specificity of this process, no generic use case has been identified for this step.</p>
+            </div>
+
+
+        </article>
+
+        <article>
+
+
+
+        </article>
+
+        <article> <!--35-->
+
+            <div class="text">
+                <ol>
+                    <li>What is the value of constraint “époque” for chapter 8? (18ème)<br/>(= extract a single constraint's value for a specific chapter) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-13">SPARQL Query</a><br/><br/></li>
+                    <li>What is the value of constraint “végétal” for chapter 70? (fleurs séchés) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-14">SPARQL Query</a><br/><br/></li>
+                    <li>What chapters have value “amour” in the “sentiments” constraint? (8, 17, 34, 40, 59, 66, 82, 85, 87, 91)<br/>(= extract the list of chapters having the same constraint) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-15">SPARQL Query</a><br/><br/></li>
+                    <li>What constraints are defined for chapter 76?
+                      <ul>
+                        <li>1A position = couché sur le dos</li>
+                        <li>1a activité = lire, écrire</li>
+                        <li>1B citation 1 = Verne</li>
+                        <li>1b citation 2 = Calvino</li>
+                        <li>...(see the complete answer <a href="http://escarbille.free.fr/vme/?chap=99" target="_blank">here</a>)</li>
+
+                      </ul>
+                      (= extract the complete list of constraints for a chapter)<br/>
+                      <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-16">SPARQL Query</a><br/><br/>
+                    </li>
+                    <li>What are the constraints of the missing cell/chapter? (click <a href="http://escarbille.free.fr/vme/?chap=90" target="_blank">here</a> for the answer)<br/>
+                    (= extract the constraint values with less than 10 attributions to chapters)</li>
+                    <p><a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-17">SPARQL Query</a></p>
+                  </ol>
+
+            </div>
+
+        </article>
+
+        <article>
+            <div class="text">
+            <h4>Unit Tests</h4>
+        </div>
+
+
+        </article>
+
+        <article> <!--37-->
+
+
+        </article>
+
+        <article>
+
+
+        </article>
+
+        <article>
+
+
+
+        </article>
+
+        <article> <!--40-->
+
+
+        </article>
+
+        <article> <!--41-->
+
+
+
+
+        </article>
+
+        <article>  <!--42-->
+
+
+        </article>
+
+        <article> <!--43-->
+
+
+        </article>
+
+        <article> <!--44-->
+            <div class="text">
+                <h4>Third Step Notes</h4>
+            </div>
+
+
+        </article>
+
+        <article> <!--45-->
+            <div class="text">
+                <p>Inferences have been produced with <strong>Pellet</strong> reasoner.</p>
+                <p>SPARQL queries have been tested with the <strong>Snap SPARQL Query</strong> plugin for Protege, that allows queries on inferred axioms.</p>
+            </div>
+
+
+        </article>
+
+        <article><!--46-->
+            <a href="./sparse.html"><img id="door" src="./img/door.png"/></a>
+
+
+        </article>
+
+        <article> <!--47-->
+
+
+        </article>
+
+        <article> <!--48-->
+            <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454463" target="_blank"><img id="unibo" src="./img/unibo.png"/></a>
+
+        </article>
+
+        <article> <!--49-->
+            <a href="https://github.com/lifeawo/lifeawo.github.io" target="_blank"><img id="github" src="./img/github.png"/></a>
+
+        </article>
+        <article> <!--50-->
+            <div class="text">
+                <p>2022, Diego Chillo & Laura Travaglini</p>
+            </div>
+        </article>
+        <article> <!--51-->
+
+
+        </article>
+        <article> <!--52-->
+
+
+        </article>
+        <article> <!--53-->
+
+        </article>
+        <article> <!--54-->
+
+        </article>
+        <article> <!--55-->
+
+        </article>
+        <article> <!--56-->
+
+        </article>
+        <article> <!--57-->
+
+        </article>
+
+        <article> <!--58-->
+
+        </article>
+        <article> <!--59-->
+
+        </article>
+
+
+
+    </section>
+
+
+    <!-- MODAL BOXEX FOR SPARQL QUERIES -->
+    <div id="sparql-13" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the value of constraint “époque” for chapter 8?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX bag: &lt;http://www.ontologydesignpatterns.org/cp/owl/bag.owl#&gt;<br/>
+          <br/>
+          SELECT ?constvaluelabel<br/>
+          &nbsp;&nbsp;WHERE { <br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?const rdfs:label "époque" .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constvalue bag:itemOf ?const .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:hasConstraintValue ?constvalue ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:ChapterNumber 8 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constvalue rdfs:label ?constvaluelabel .<br/>
+          &nbsp;&nbsp;}<br/>
+          <br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          constvaluelabel = "18ème"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-14" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the value of constraint “végétal” for chapter 70?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX bag: &lt;http://www.ontologydesignpatterns.org/cp/owl/bag.owl#&gt;<br/>
+          <br/>
+          SELECT ?constvaluelabel<br/>
+          &nbsp;&nbsp;WHERE { <br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?const rdfs:label "végétal" .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constvalue bag:itemOf ?const .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?chap lawo:hasConstraintValue ?constvalue ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:ChapterNumber 70 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constvalue rdfs:label ?constvaluelabel .<br/>
+          &nbsp;&nbsp;}<br/>
+          <br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          constvaluelabel = "18ème"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-15" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What chapters have value “amour” in the “sentiments” constraint?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX bag: &lt;http://www.ontologydesignpatterns.org/cp/owl/bag.owl#&gt;<br/>
+          <br/>
+          SELECT ?chapnum<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?const a lawo:Constraint ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:label "sentiments" .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constvalue a lawo:ConstraintValue ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bag:itemOf ?const ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:label "amour" .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?chap a lawo:Chapter ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:hasConstraintValue ?constvalue ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:ChapterNumber ?chapnum .<br/>
+          &nbsp;&nbsp;}<br/>
+          ORDER BY ?chapnum<br/>
+          <br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          "8"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "17"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "34"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "40"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "59"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "66"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "82"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "85"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "87"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          "91"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;<br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="sparql-16" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What constraints are defined for chapter 76?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX bag: &lt;http://www.ontologydesignpatterns.org/cp/owl/bag.owl#&gt;<br/>
+          <br/>
+          SELECT ?const ?constlabel ?constvallabel<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?chap a lawo:Chapter ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:ChapterNumber 76 ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:hasConstraintValue ?constval .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constval a lawo:ConstraintValue ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bag:itemOf ?const ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:label ?constvallabel .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?const rdfs:label ?constlabel .<br/>
+          &nbsp;&nbsp;}<br/>
+          ORDER BY ?const<br/>
+          <br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          0A	"végétal" =	"fleurs"<br/>
+          0B	"manque" = "4"<br/>
+          0a	"bibelots"	= "cuivre, étain"<br/>
+          0b	"faux" =	"1"<br/>
+          1A	"position" =	"couché sur le dos"<br/>
+          1B	"citation 1" =	"Verne"<br/>
+          1C	"couple 1" =	"Belle"<br/>
+          1a	"activité" =	"lire, écrire"<br/>
+          1b	"citation 2" =	"Calvino"<br/>
+          1c	"couple 2" =	"pâturage"<br/>
+          2A	"nombre personnes" =	"02.00.00"<br/>
+          2B	"3è secteur" =	"prospectus pharmacie"<br/>
+          2a	"rôle" =	"domestique"<br/>
+          2b	"ressort ?" =	"établir une filiation"<br/>
+          3A	"murs" =	"boiseries"<br/>
+          3B	"époque" =	"moyen-age"<br/>
+          3a	"sols" =	"moquette"<br/>
+          3b	"lieu" =	"Etats-Unis"<br/>
+          4A	"style" =	"Napoléon III"<br/>
+          4B	"longueur" =	"4 pages"<br/>
+          4a	"meubles" =	"chaise"<br/>
+          4b	"divers" =	"argents (billets)"<br/>
+          5A	"age et sexe" =	"homme 35-60"<br/>
+          5B	"vêtement" =	"chandail…"<br/>
+          5a	"animaux" =	"rat, souris"<br/>
+          5b	"tissus (nature)" =	"à carreaux"<br/>
+          6A	"tissus (matière)" =	"flanelle ou feutre"<br/>
+          6B	"accessoires" =	"cravate, foulard"<br/>
+          6a	"couleurs" =	"gris"<br/>
+          6b	"bijoux" =	"montre"<br/>
+          7A	"lectures" =	"3ème secteur"<br/>
+          7B	"tableaux" =	"Les époux Arnolfini (Jan Van Eyck)"<br/>
+          7a	"musiques" =	"ancienne"<br/>
+          7b	"livre" =	"Conversions (Harry Mathews)"<br/>
+          8A	"boissons" =	"infusion"<br/>
+          8B	"petit meuble" =	"lampes, chandeliers"<br/>
+          8a	"nourriture" =	"oeufs, crudités, salades"<br/>
+          8b	"jeux" =	"mots croisés"<br/>
+          9A	"sentiments" =	"ambition"<br/>
+          9B	"surface" =	"étoiles"<br/>
+          9a	"peintures" =	"cartes postales"<br/>
+          9b	"volume" =	"hémisphère"<br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-17" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What are the constraints of the missing cell/chapter?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX bag: &lt;http://www.ontologydesignpatterns.org/cp/owl/bag.owl#&gt;<br/>
+          <br/>
+          SELECT ?constr ?constrlabel ?constrvallabel (count(?chap) as ?cnt) <br/>
+          &nbsp;&nbsp;WHERE {<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constrval a lawo:ConstraintValue ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lawo:belongsToChapter ?chap ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:label ?constrvallabel ;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bag:itemOf ?constr .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?constr rdfs:label ?constrlabel .<br/>
+          &nbsp;&nbsp;}<br/>
+          GROUP BY ?constr ?constrlabel ?constrvallabel <br/>
+          HAVING (?cnt&lt;10)<br/>
+          ORDER BY ?cnt ?constr ?constrval<br/>
+          <br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          0A	"végétal" =	"immortelles, chardons, etc…"<br/>
+          0B	"manque" = "5"<br/>
+          0a	"bibelots"	= "acier, alu."<br/>
+          0b	"faux" =	"2"<br/>
+          1A	"position" =	"entrer"<br/>
+          1B	"citation 1" =	"Flaubert"<br/>
+          1C	"couple 1" =	"Faucille"<br/>
+          1a	"activité" =	"érotique"<br/>
+          1b	"citation 2" =	"Rabelais"<br/>
+          1c	"couple 2" =	"Préjugé"<br/>
+          2A	"nombre personnes" =	"5"<br/>
+          2B	"3è secteur" =	"article dictionn., règlements"<br/>
+          2a	"rôle" =	"occupant.."<br/>
+          2b	"ressort ?" =	"créer"<br/>
+          3A	"murs" =	"papier uni ou géométrique"<br/>
+          3B	"époque" =	"l'après-guerre"<br/>
+          3a	"sols" =	"lino"<br/>
+          3b	"lieu" =	"Amérique du Sud"<br/>
+          4A	"style" =	"camping"<br/>
+          4B	"longueur" =	"3 pages"<br/>
+          4a	"meubles" =	"bibliothèque"<br/>
+          4b	"divers" =	"armes"<br/>
+          5A	"age et sexe" =	"vieillard femme"<br/>
+          5B	"vêtement" =	"uniforme"<br/>
+          5a	"animaux" =	"insectes, bestioles"<br/>
+          5b	"tissus (nature)" =	"à fleurs"<br/>
+          6A	"tissus (matière)" =	"soie"<br/>
+          6B	"accessoires" =	"écharpe, cache-col"<br/>
+          6a	"couleurs" =	"blanc"<br/>
+          6b	"bijoux" =	"collier"<br/>
+          7A	"lectures" =	"rapport technique, livre classe"<br/>
+          7B	"tableaux" =	"Le Songe de Ste Ursule (Carpaccio)"<br/>
+          7a	"musiques" =	"pop et folk"<br/>
+          7b	"livre" =	"Ubu (Alfred Jarry)"<br/>
+          8A	"boissons" =	"coca etc…"<br/>
+          8B	"petit meuble" =	"pianos"<br/>
+          8a	"nourriture" =	"poissons et crustacés"<br/>
+          8b	"jeux" =	"dominos"<br/>
+          9A	"sentiments" =	"douleur"<br/>
+          9B	"surface" =	"rectangle"<br/>
+          9a	"peintures" =	"dessin"<br/>
+          9b	"volume" =	"oeuf"<br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    // Venobox for SPARQL Query windows
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <script type="text/javascript">
+        new VenoBox({
+          selector: ".sparql-link"
+        });
+    </script>
+
+</body>
+</html>
