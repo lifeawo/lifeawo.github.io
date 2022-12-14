@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="project3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&&family=Sono:wght@200;400;500;700;800&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet for SPARQL Query lighboxes -->
+    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
+
+</head>
+<body>
+    <section>
+
+        <article> <!--1-->
+            <a href="./index.html">
+            <img id="logo" src="./img/logolawo.png"/>
+        </a>
+        </article>
+
+        <article> <!--2-->
+
+        </article>
+
+        <article> <!--3-->
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--5-->
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--9-->
+            <div class="nav">
+            <a href="./book.html">
+                <h2 >The <br/>Book</h2>
+            </a>
+             </div>
+        </article>
+
+        <article> <!--10-->
+            <div class="nav">
+            <a href="./project.html">
+                <h2>The <br/>Project</h2>
+                </a>
+            </div>
+
+
+        </article>
+
+        <article><!--11-->
+            <div class="nav">
+            <a href="myDocumentation/index-en.html" target="_blank">
+                <h2>Ontology</h2>
+            </a>
+            </div>
+
+        </article>
+
+        <article><!--12-->
+            <div class="nav">
+                <a href="./sparse.html">
+                    <h2>Sparse Parts</h2>
+                </a>
+                </div>
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article> <!--15-->
+
+
+        </article>
+
+        <article><!--16-->
+            <a href="./project2.html"><img id="arrow2" src="./img/arrow.png"/></a>
+
+
+
+        </article>
+
+        <article> <!--17-->
+            <div class="text">
+                <h4>Second Step:</h4>
+                <h5>The Cahier des Charges</h5>
+
+            </div>
+
+        </article>
+
+        <article> <!--18-->
+            <a href="./project4.html"><img id="arrow" src="./img/arrow.png"/></a>
+
+        </article>
+
+        <article> <!--19-->
+
+        </article>
+
+        <article> <!--20-->
+
+        </article>
+
+        <article>
+
+            <div class="text">
+                <p>There's a <b>table of constraints made of 21 rows and 10 columns</b>. Each row is splitted in 2 categories, one identified by an uppercase letter and one by the corresponding lowercase. Each category has a name and a code. <b>For each of the 42 categories there are 10 arbitrary values</b>.</p>
+                </div>
+
+
+        </article>
+
+        <article>
+
+
+
+        </article>
+
+        <article><!--23-->
+            <div class="text">
+                <h4>Competency Questions</h4>
+            </div>
+
+        </article>
+
+        <article> <!--24-->
+            <div class="text">
+                <ol>
+                    <li>What is the name of the first category of constraints? (position)</li>
+                    <li>What is the name of the sixteenth category? (divers)</li>
+                    <li>What is the third value of the tenth category? (parquet à bâtons rompus)</li>
+                    <li>What are the values of the twentieth category? (uni,	à rayures, à pois, à carreaux, écossais, patchwork, à ramages, à fleurs, “imprimés, à motif”, brodé)</li>
+                  </ol>
+        </div>
+        </article>
+
+        <article> <!--25-->
+
+
+        </article>
+
+        <article> <!--26-->
+
+
+        </article>
+
+        <article><!--27-->
+
+
+        </article>
+
+        <article><!--28-->
+            <div class="text">
+            <p><strong>Classes:</strong></p>
+            <ul>
+                <li>Constraint</li>
+                <li class="margin">ConstraintValue</li>
+              </ul>
+              <p><strong>Data Properties:</strong></p>
+              <p class="margin">No new data properties were defined in this step.</p>
+
+              <p><strong>Object Properties:</strong></p>
+              <p>Before identifying the right ODP to use for this step, we defined two Object Properties to connect elements of the ConstraintValue class to the ones of the Constraint class. We later abandoned this solution.</p>
+
+            </div>
+
+        </article>
+
+        <article><!--29-->
+            <div class="text">
+                <h4>Elements</h4>
+            </div>
+
+
+
+        </article>
+
+        <article> <!--30-->
+
+
+        </article>
+
+        <article> <!--31-->
+
+        </article>
+
+
+        <article> <!--32-->
+
+
+        </article>
+
+        <article><!--33-->
+            <div class="text">
+                <h4>Generic Use Cases</h4>
+            </div>
+
+        </article>
+
+        <article>
+            <div class="text">
+                <p class="margin">Most important thing: To guarantee the machine's reusability, we need each value of the constraints to be reified as a singular named individual.</p>
+                <p class="margin">Then, for this step we identified the ODP <strong>“List”</strong> from ontologydesignpatterns.org:<br/>
+                    <a href="http://ontologydesignpatterns.org/wiki/Submissions:List" target="_blank">http://ontologydesignpatterns.org/wiki/Submissions:List</a></p>
+
+                    <p class="margin">Initially, we defined each constraint as a class, and each value as a named individual of that class. Then, using the “List” ODP, we converted each constraint into an individual of the class “List” and connected the related values asserting the object properties <strong>itemOf</strong>, <strong>firstItemOf</strong>, <strong>lastItemOf</strong>, <strong>previousItem</strong>. All the inverse properties (hasItem, hasFirstItem, hasLastItem, nextItem) were automatically inferred.</p>
+                    <p>The "list of lists", that is the list of constraints (the first column of the Cahier des Charges), cannot be defined as a list itself, because a list item cannot be at the same time a list, given the explicit disjunction of the two classes in the "List" ODP. Thus, we again resorted to the <strong>Sequence</strong> ODP to specify the order of the constraints.</p>
+            </div>
+
+
+
+        </article>
+
+        <article> <!--35-->
+
+
+
+        </article>
+
+        <article>
+
+
+
+        </article>
+
+        <article> <!--37-->
+
+
+        </article>
+
+        <article>
+
+        </article>
+
+        <article>
+
+
+
+        </article>
+
+        <article> <!--40-->
+            <div class="text">
+                <ol>
+                    <li>What is the name of the first constraint? (position) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-09">SPARQL Query</a></li>
+                    <li>What is the name of the sixteenth constraint? (divers) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-10">SPARQL Query</a></li>
+                    <li>What is the third value of the tenth category? (parquet à bâtons rompus) - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-11">SPARQL Query</a></li>
+                    <li>What are the values of the twentieth category? (uni,	à rayures, à pois, à carreaux, écossais, patchwork, à ramages, à fleurs, “imprimés, à motif”, brodé)  - <a class="sparql-link" data-vbtype="inline" data-maxwidth="750px" href="#sparql-12">SPARQL Query</a></li>
+                  </ol>
+
+            </div>
+
+        </article>
+
+        <article> <!--41-->
+            <div class="text">
+                <h4>Unit Tests</h4>
+            </div>
+
+
+
+        </article>
+
+        <article>  <!--42-->
+
+
+        </article>
+
+        <article> <!--43-->
+
+
+        </article>
+
+        <article> <!--44-->
+
+
+        </article>
+
+        <article> <!--45-->
+            <div class="text">
+                <h4>Second Step Notes</h4>
+            </div>
+
+        </article>
+
+        <article><!--46-->
+            <div class="text">
+                <p>The consistency of the model has been checked with the <strong>Pellet</strong> reasoner. SPARQL queries have been tested using the <strong>SPARQL Query</strong> tab in Protege. The main Cahier des Charges table has been imported after exporting it in CSV format, then using Clark & Parsia's <strong>csv2rdf</strong>.</p>
+            </div>
+
+
+        </article>
+
+        <article> <!--47-->
+            <a href="./project4.html"><img id="door" src="./img/door.png"/></a>
+
+
+        </article>
+
+        <article> <!--48-->
+
+
+        </article>
+
+        <article> <!--49-->
+            <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454463" target="_blank"><img id="unibo" src="./img/unibo.png"/></a>
+
+        </article>
+        <article> <!--50-->
+            <a href="https://github.com/lifeawo/lifeawo.github.io" target="_blank"><img id="github" src="./img/github.png"/></a>
+
+        </article>
+        <article> <!--51-->
+            <div class="text">
+                <p>2022, Diego Chillo & Laura Travaglini</p>
+            </div>
+
+        </article>
+        <article> <!--52-->
+
+
+        </article>
+        <article> <!--53-->
+
+        </article>
+        <article> <!--54-->
+
+        </article>
+        <article> <!--55-->
+
+        </article>
+        <article> <!--56-->
+
+        </article>
+        <article> <!--57-->
+
+        </article>
+
+        <article> <!--58-->
+
+        </article>
+        <article> <!--59-->
+
+        </article>
+        <article> <!--60-->
+
+        </article>
+
+
+
+    </section>
+
+
+
+    <!-- MODAL BOXEX FOR SPARQL QUERIES -->
+    <div id="sparql-09" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the name of the first category of constraints?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX sequence: &lt;http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#&gt;<br/>
+          <br/>
+          SELECT ?firstcat_label<br/>
+            &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?firstcat a lawo:Constraint .<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL { ?firstcat sequence:directlyFollows ?cat }<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;FILTER( !bound( ?cat ) )<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;?firstcat rdfs:label ?firstcat_label .<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          firstcat = "position"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-10" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the name of the sixteenth category of constraints?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX sequence: &lt;http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#&gt;<br/>
+          <br/>
+          SELECT ?cat16_label<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?firstcat a lawo:Constraint .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL { ?firstcat sequence:directlyFollows ?cat }<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;FILTER( !bound( ?cat ) )<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat2 sequence:directlyFollows ?firstcat .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat3 sequence:directlyFollows ?cat2 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat4 sequence:directlyFollows ?cat3 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat5 sequence:directlyFollows ?cat4 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat6 sequence:directlyFollows ?cat5 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat7 sequence:directlyFollows ?cat6 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat8 sequence:directlyFollows ?cat7 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat9 sequence:directlyFollows ?cat8 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat10 sequence:directlyFollows ?cat9 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat11 sequence:directlyFollows ?cat10 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat12 sequence:directlyFollows ?cat11 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat13 sequence:directlyFollows ?cat12 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat14 sequence:directlyFollows ?cat13 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat15 sequence:directlyFollows ?cat14 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat16 sequence:directlyFollows ?cat15 .<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;?cat16 rdfs:label ?cat16_label .<br/>
+          &nbsp;&nbsp;}
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          cat16_label = "divers"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-11" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What is the third value of the tenth category?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX sequence: &lt;http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#&gt;<br/>
+          PREFIX list: &lt;http://www.ontologydesignpatterns.org/cp/owl/list.owl#&gt;<br/>
+          <br/>
+          SELECT ?label_value3_cat10<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?firstcat a lawo:Constraint .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL { ?firstcat sequence:directlyFollows ?cat }<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;FILTER( !bound( ?cat ) )<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat2 sequence:directlyFollows ?firstcat .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat3 sequence:directlyFollows ?cat2 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat4 sequence:directlyFollows ?cat3 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat5 sequence:directlyFollows ?cat4 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat6 sequence:directlyFollows ?cat5 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat7 sequence:directlyFollows ?cat6 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat8 sequence:directlyFollows ?cat7 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat9 sequence:directlyFollows ?cat8 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?cat10 sequence:directlyFollows ?cat9 .<br/>
+              <br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?firstvalue a lawo:ConstraintValue ;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list:firstItemOf ?cat10 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?firstvalue list:previousItem ?value2 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?value2 list:previousItem ?value3 .<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;?value3 rdfs:label ?label_value3_cat10<br/>
+            &nbsp;&nbsp;}<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Result:</strong><br/>
+          label_value3_cat10 = "parquet à bâtons rompus"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="sparql-12" style="display:none;">
+      <div class="modalbox">
+        <h3>CQ: What are the values of the twentieth category?</h3>
+        <div class="codebox">
+        <code>
+          PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br/>
+          PREFIX lawo: &lt;https://lifeawo.github.io/lifeawo.owl#&gt;<br/>
+          PREFIX sequence: &lt;http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#&gt;<br/>
+          PREFIX list: &lt;http://www.ontologydesignpatterns.org/cp/owl/list.owl#&gt;<br/>
+          PREFIX bag: &lt;http://www.ontologydesignpatterns.org/cp/owl/bag.owl#&gt;<br/>
+          <br/>
+          SELECT ?value_label<br/>
+          &nbsp;&nbsp;WHERE {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?firstcat a lawo:Constraint .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;OPTIONAL { ?firstcat sequence:directlyFollows ?cat }<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;FILTER( !bound( ?cat ) )<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat2 sequence:directlyFollows ?firstcat .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat3 sequence:directlyFollows ?cat2 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat4 sequence:directlyFollows ?cat3 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat5 sequence:directlyFollows ?cat4 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat6 sequence:directlyFollows ?cat5 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat7 sequence:directlyFollows ?cat6 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat8 sequence:directlyFollows ?cat7 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat9 sequence:directlyFollows ?cat8 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat10 sequence:directlyFollows ?cat9 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat11 sequence:directlyFollows ?cat10 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat12 sequence:directlyFollows ?cat11 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat13 sequence:directlyFollows ?cat12 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat14 sequence:directlyFollows ?cat13 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat15 sequence:directlyFollows ?cat14 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat16 sequence:directlyFollows ?cat15 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat17 sequence:directlyFollows ?cat16 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat18 sequence:directlyFollows ?cat17 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat19 sequence:directlyFollows ?cat18 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?cat20 sequence:directlyFollows ?cat19 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?value a lawo:ConstraintValue ;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bag:itemOf ?cat20 .<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;?value rdfs:label ?value_label .<br/>
+          &nbsp;&nbsp;}<br/>
+          <br/>
+        ORDER BY ?value<br/>
+        </code></div>
+        <div class="query-result">
+          <strong>Results:</strong><br/>
+          value_label =
+          "uni",
+          "à rayures",
+          "à pois",
+          "à carreaux",
+          "écossais",
+          "patchwork",
+          "à ramages",
+          "à fleurs",
+          "imprimés, à motif",
+          "brodé"<br/>
+        </div>
+      </div>
+    </div>
+
+
+
+    // Venobox for SPARQL Query windows
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <script type="text/javascript">
+        new VenoBox({
+          selector: ".sparql-link"
+        });
+    </script>
+
+</body>
+</html>
