@@ -141,9 +141,6 @@ article {
     place-content: center;
 }
 
-article:first-child:hover {
-    background-color: #1e1e1e;
-}
 
 article:nth-child(9):hover, article:nth-child(10):hover,
 article:nth-child(11):hover, article:nth-child(12):hover, 
@@ -243,7 +240,7 @@ article:first-child {
     border: solid 1px #1e1e1e;
 }
 
-article:first-child:hover #logo, article:nth-child(35):hover #unibo, article:nth-child(36):hover #github {
+article:nth-child(35):hover #unibo, article:nth-child(36):hover #github {
     filter: invert(1);
 }
 
