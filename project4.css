@@ -376,7 +376,10 @@ article:nth-child(48){
     border-right: solid 1px #1e1e1e;
 }
 
-article:nth-child(15), article:nth-child(20), article:nth-child(22) {
+article:nth-child(15), article:nth-child(20), article:nth-child(22), 
+article:nth-child(23), article:nth-child(26), article:nth-child(28),
+article:nth-child(31), article:nth-child(34), article:nth-child(37),
+article:nth-child(39), article:nth-child(41), article:nth-child(43),article:nth-child(48) {
     border-left: solid 1px #1e1e1e;
 }
 
