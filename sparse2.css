@@ -415,7 +415,9 @@ article:nth-child(34) {
 }
 
 
-article:nth-child(15), article:nth-child(20),  article:nth-child(27) {
+article:nth-child(15), article:nth-child(20),  article:nth-child(27),  article:nth-child(30),
+article:nth-child(32),  article:nth-child(35),  article:nth-child(37),  article:nth-child(39),
+article:nth-child(42),  article:nth-child(44)   {
     border-left: solid 1px #1e1e1e;
 }
 

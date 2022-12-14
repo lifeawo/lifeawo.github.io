@@ -435,7 +435,14 @@ article:nth-child(8),article:nth-child(78), article:nth-child(81) {
 
 
 article:nth-child(15), article:nth-child(20), article:nth-child(22), 
-article:nth-child(25), article:nth-child(27) {
+article:nth-child(25), article:nth-child(27),  article:nth-child(30),
+article:nth-child(32),  article:nth-child(34),  article:nth-child(36),
+article:nth-child(39),  article:nth-child(41),  article:nth-child(43),  
+article:nth-child(45), article:nth-child(47),  article:nth-child(49),
+article:nth-child(51),  article:nth-child(54),  article:nth-child(56),
+article:nth-child(59),  article:nth-child(61),  article:nth-child(63), 
+ article:nth-child(66), article:nth-child(69),  article:nth-child(70),
+ article:nth-child(73),  article:nth-child(76) {
     border-left: solid 1px #1e1e1e;
 }
 
